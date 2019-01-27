@@ -1,5 +1,6 @@
 package models;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class SingleEvent {
@@ -16,14 +17,17 @@ public class SingleEvent {
 
     private List<Artist> artists;
 
+    private MultiEvent multiEvent;
 
-    public SingleEvent(String title, int date, String location, String venue){
+
+    public SingleEvent(String title, int date, String location, String venue, MultiEvent multiEvent){
 
         this.title = title;
         this.date = date;
         this.location = location;
         this.venue = venue;
-        this.artists = new ArrayList<>();
+        this.artists = new ArrayList<Artist>();
+        this.multiEvent = multiEvent;
 
 
 
@@ -79,5 +83,13 @@ public class SingleEvent {
 
     public void setArtists(List<Artist> artists) {
         this.artists = artists;
+    }
+
+    public MultiEvent getMultiEvent() {
+        return multiEvent;
+    }
+
+    public void setMultiEvent(MultiEvent multiEvent) {
+        this.multiEvent = multiEvent;
     }
 }

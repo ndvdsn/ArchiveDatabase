@@ -6,7 +6,10 @@ public class Artist {
 
 
     private Long id;
+
+    @Column(name = "name")
     private String name;
+
     private String country;
 
     public Artist(String name, String group, String country){
