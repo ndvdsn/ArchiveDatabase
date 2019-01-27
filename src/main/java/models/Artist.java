@@ -1,16 +1,36 @@
 package models;
 
-import javax.persistence.Column;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import org.hibernate.annotations.Cascade;
+
+import javax.persistence.*;
+import java.util.List;
+
+@Entity
+@Table(name = "artists")
 
 public class Artist {
 
-
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @Column(name = "name")
     private String name;
 
+    @Column(name = "country")
     private String country;
+
+    @JsonIgnoreProperties("artists")
+    @ManyToOne
+    @JoinColumn(name = "ensemble_id", nullable = false)
+    private Ensemble ensemble;
+
+    @JsonIgnoreProperties("artists")
+    @ManyToMany
+    @Cascade(org.hibernate.annotations.CascadeType.SAVE_UPDATE)
+    @JoinTable(joinColumns = {@JoinColumn(name = "artist_id", nullable = false, updatable = false)}, inverseJoinColumns = {@JoinColumn(name = "singleEvent_id", nullable = false, updatable = false)})
+    private List<SingleEvent> singleEvents;
 
     public Artist(String name, String group, String country){
         this.name = name;
@@ -39,5 +59,21 @@ public class Artist {
 
     public void setCountry(String country) {
         this.country = country;
+    }
+
+    public Ensemble getEnsemble() {
+        return ensemble;
+    }
+
+    public void setEnsemble(Ensemble ensemble) {
+        this.ensemble = ensemble;
+    }
+
+    public List<SingleEvent> getSingleEvents() {
+        return singleEvents;
+    }
+
+    public void setSingleEvents(List<SingleEvent> singleEvents) {
+        this.singleEvents = singleEvents;
     }
 }
