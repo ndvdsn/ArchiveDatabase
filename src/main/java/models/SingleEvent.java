@@ -1,20 +1,38 @@
 package models;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import org.hibernate.annotations.Cascade;
+
+import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
 
 public class SingleEvent {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @Column(name="title")
     private String title;
 
+    @Column(name = "date")
     private int date;
 
+    @Column(name = "location")
     private String location;
 
+    @Column(name = "venue")
     private String venue;
 
+    @JsonIgnoreProperties("singleEvents")
+    @ManyToMany
+    @Cascade(org.hibernate.annotations.CascadeType.SAVE_UPDATE)
+    @JoinTable(
+            name = "artists_singleEvents",
+            joinColumns = {@JoinColumn(name = "singleEvent_id", nullable = false, updatable = false)},
+            inverseJoinColumns = {@JoinColumn(name="artist_id", nullable = false, updatable = false)}
+    )
     private List<Artist> artists;
 
     private MultiEvent multiEvent;
