@@ -1,8 +1,8 @@
 package models;
 
+import javax.persistence.Column;
+
 public class Artist {
-
-
 
 
     private Long id;
