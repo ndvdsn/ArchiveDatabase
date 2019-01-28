@@ -1,13 +1,23 @@
 package models;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import org.hibernate.annotations.Cascade;
+
+import javax.persistence.*;
 import java.util.List;
 
 public class Ensemble {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @Column(name = "name")
     private String name;
 
+    @JsonIgnoreProperties("singleEvents")
+    @Cascade(org.hibernate.annotations.CascadeType.DELETE)
+    @OneToMany(mappedBy = "ensemble", fetch = FetchType.LAZY)
     private List<Artist> artists;
 
     public Ensemble(Long id, String name, List<Artist> artists) {
