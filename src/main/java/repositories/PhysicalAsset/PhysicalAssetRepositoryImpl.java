@@ -1,4 +1,4 @@
 package repositories.PhysicalAsset;
 
-public class PhysicalAssetRepositoryImpl {
+public class PhysicalAssetRepositoryImpl implements PhysicalAssetRepositoryCustom {
 }

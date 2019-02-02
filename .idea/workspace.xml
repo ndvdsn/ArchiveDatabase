@@ -2,29 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="712565bb-d22b-46fb-9a90-c28243ac635d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/models/PhysicalAsset.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/repositories/Artist/ArtistRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/repositories/Artist/ArtistRepositoryCustom.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/repositories/Artist/ArtistRepositoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/repositories/Document/DocumentRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/repositories/Document/DocumentRepositoryCustom.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/repositories/Document/DocumentRepositoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/repositories/Group/GroupRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/repositories/Group/GroupRepositoryCustom.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/repositories/Group/GroupRepositoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/repositories/MultiEvent/MultiEventRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/repositories/MultiEvent/MultiEventRepositoryCustom.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/repositories/MultiEvent/MultiEventRepositoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/repositories/PhysicalAsset/PhysicalAssetRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/repositories/PhysicalAsset/PhysicalAssetRepositoryCustom.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/repositories/PhysicalAsset/PhysicalAssetRepositoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/repositories/SingleEvent/SingleEventREpositoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/repositories/SingleEvent/SingleEventRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/repositories/SingleEvent/SingleEventRepositoryCustom.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/models/Artist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Artist.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/models/Asset.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/models/Ensemble.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Group.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/components/DataLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/components/DataLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/repositories/Artist/ArtistRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repositories/Artist/ArtistRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/repositories/Artist/ArtistRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repositories/Artist/ArtistRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/repositories/Document/DocumentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repositories/Document/DocumentRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/repositories/Document/DocumentRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repositories/Document/DocumentRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/repositories/Group/GroupRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repositories/Group/GroupRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/repositories/Group/GroupRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repositories/Group/GroupRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/repositories/MultiEvent/MultiEventRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repositories/MultiEvent/MultiEventRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/repositories/MultiEvent/MultiEventRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repositories/MultiEvent/MultiEventRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/repositories/PhysicalAsset/PhysicalAssetRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repositories/PhysicalAsset/PhysicalAssetRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/repositories/PhysicalAsset/PhysicalAssetRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repositories/PhysicalAsset/PhysicalAssetRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/repositories/SingleEvent/SingleEventREpositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repositories/SingleEvent/SingleEventRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/repositories/SingleEvent/SingleEventRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repositories/SingleEvent/SingleEventRepository.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -77,129 +69,137 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="30" />
-          <entry key="xml" value="1" />
+          <entry key="java" value="56" />
+          <entry key="xml" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="30" />
-          <entry key="XML" value="1" />
+          <entry key="JAVA" value="56" />
+          <entry key="XML" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="13" />
-          <entry key="java" value="3703" />
+          <entry key="java" value="4861" />
+          <entry key="xml" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="3703" />
+          <entry key="JAVA" value="4861" />
           <entry key="PLAIN_TEXT" value="13" />
+          <entry key="XML" value="2" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/repositories/Document/DocumentRepositoryImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="35" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/repositories/Group/GroupRepository.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="32" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/repositories/Group/GroupRepositoryCustom.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="38" selection-start-line="2" selection-start-column="38" selection-end-line="2" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/repositories/Group/GroupRepositoryImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="32" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/repositories/MultiEvent/MultiEventRepository.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="37" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/repositories/MultiEvent/MultiEventRepositoryCustom.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="43" selection-start-line="2" selection-start-column="43" selection-end-line="2" selection-end-column="43" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/repositories/MultiEvent/MultiEventRepositoryImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="37" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/repositories/PhysicalAsset/PhysicalAssetRepository.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="40" selection-start-line="2" selection-start-column="40" selection-end-line="2" selection-end-column="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/repositories/PhysicalAsset/PhysicalAssetRepositoryCustom.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="46" selection-start-line="2" selection-start-column="46" selection-end-line="2" selection-end-column="46" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/repositories/PhysicalAsset/PhysicalAssetRepositoryImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="40" selection-start-line="2" selection-start-column="40" selection-end-line="2" selection-end-column="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="vertical" split-proportion="0.5">
+      <split-first>
+        <leaf>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/models/Artist.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="315">
+                  <caret line="21" column="27" lean-forward="true" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/repositories/Artist/ArtistRepository.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="135">
+                  <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/repositories/Artist/ArtistRepositoryCustom.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="30">
+                  <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/main/java/repositories/Artist/ArtistRepositoryImpl.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="30">
+                  <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/repositories/Document/DocumentRepositoryImpl.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="60">
+                  <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/repositories/Group/GroupRepositoryImpl.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="30">
+                  <caret line="2" column="65" selection-start-line="2" selection-start-column="65" selection-end-line="2" selection-end-column="65" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/repositories/MultiEvent/MultiEventRepositoryImpl.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="30">
+                  <caret line="2" column="75" selection-start-line="2" selection-start-column="75" selection-end-line="2" selection-end-column="75" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/repositories/PhysicalAsset/PhysicalAssetRepositoryImpl.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="30">
+                  <caret line="2" column="82" selection-start-line="2" selection-start-column="82" selection-end-line="2" selection-end-column="82" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/main/java/repositories/SingleEvent/SingleEventRepositoryImpl.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="60">
+                  <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="AnnotationType" />
       </list>
     </option>
   </component>
@@ -219,9 +219,23 @@
         <option value="$PROJECT_DIR$/src/main/java/models/Document.java" />
         <option value="$PROJECT_DIR$/src/main/java/models/Asset.java" />
         <option value="$PROJECT_DIR$/src/main/java/models/Group.java" />
-        <option value="$PROJECT_DIR$/src/main/java/repositories/Artist/ArtistRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/repositories/ArtistRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/repositories/Artist/RepositoryRestResource.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/repositories/Artist/ArtistRepositoryImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/components/DataLoader.java" />
+        <option value="$PROJECT_DIR$/src/main/java/repositories/Document/DocumentRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/repositories/Artist/ArtistRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/repositories/Document/DocumentRepositoryImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/repositories/Group/GroupRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/repositories/MultiEvent/MultiEventRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/repositories/PhysicalAsset/PhysicalAssetRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/repositories/SingleEvent/SingleEventRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/repositories/Group/GroupRepositoryImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/repositories/MultiEvent/MultiEventRepositoryImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/repositories/PhysicalAsset/PhysicalAssetRepositoryImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/repositories/SingleEvent/SingleEventREpositoryImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/repositories/SingleEvent/SingleEventRepositoryImpl.java" />
       </list>
     </option>
   </component>
@@ -233,8 +247,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="333" />
-    <option name="y" value="195" />
+    <option name="x" value="14" />
+    <option name="y" value="371" />
     <option name="width" value="1280" />
     <option name="height" value="716" />
   </component>
@@ -277,6 +291,14 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ArchiveDatabase" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ArchiveDatabase" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="models" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -286,15 +308,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="repositories" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ArchiveDatabase" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ArchiveDatabase" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="repositories" type="462c0819:PsiDirectoryNode" />
-              <item name="SingleEvent" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ArchiveDatabase" type="b2602c69:ProjectViewProjectNode" />
@@ -325,11 +338,16 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549123716591" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549144647124" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="repositories.Artist" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -357,8 +375,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="333" y="195" width="1280" height="716" extended-state="0" />
-    <editor active="true" />
+    <frame x="14" y="371" width="1280" height="716" extended-state="0" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26979" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -420,16 +437,6 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/Repositories.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/controllers/AritstController.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/components/DataLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/models/Document.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="660">
@@ -512,104 +519,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/models/Artist.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="36" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/repositories/Artist/ArtistRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/repositories/Artist/ArtistRepositoryCustom.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/repositories/Artist/ArtistRepositoryImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/repositories/SingleEvent/SingleEventRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="38" selection-start-line="2" selection-start-column="38" selection-end-line="2" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/repositories/SingleEvent/SingleEventRepositoryCustom.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="44" selection-start-line="2" selection-start-column="44" selection-end-line="2" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/repositories/SingleEvent/SingleEventREpositoryImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="38" selection-start-line="2" selection-start-column="38" selection-end-line="2" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/repositories/Document/DocumentRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="35" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/repositories/Document/DocumentRepositoryCustom.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="41" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/repositories/Document/DocumentRepositoryImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="35" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/repositories/Group/GroupRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="32" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/repositories/Group/GroupRepositoryCustom.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="38" selection-start-line="2" selection-start-column="38" selection-end-line="2" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/repositories/Group/GroupRepositoryImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="32" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/repositories/MultiEvent/MultiEventRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="37" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="37" />
         </state>
       </provider>
     </entry>
@@ -620,20 +533,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/repositories/MultiEvent/MultiEventRepositoryImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="37" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/repositories/PhysicalAsset/PhysicalAssetRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="40" selection-start-line="2" selection-start-column="40" selection-end-line="2" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/repositories/PhysicalAsset/PhysicalAssetRepositoryCustom.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -641,10 +540,156 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/repositories/Group/GroupRepositoryCustom.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="38" selection-start-line="2" selection-start-column="38" selection-end-line="2" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/repositories/Artist/RepositoryRestResource.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="48" column="21" selection-start-line="48" selection-start-column="21" selection-end-line="48" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/components/DataLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="37" selection-start-line="26" selection-start-column="37" selection-end-line="26" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/repositories/Artist/ArtistRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/repositories/Document/DocumentRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/models/Artist.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="27" lean-forward="true" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/repositories/SingleEvent/SingleEventRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="53" selection-start-line="5" selection-start-column="53" selection-end-line="5" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/repositories/PhysicalAsset/PhysicalAssetRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/repositories/MultiEvent/MultiEventRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="50" lean-forward="true" selection-start-line="5" selection-start-column="50" selection-end-line="5" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/repositories/Group/GroupRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="46" selection-start-line="5" selection-start-column="46" selection-end-line="5" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/repositories/Artist/ArtistRepositoryCustom.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/repositories/Document/DocumentRepositoryCustom.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/repositories/Artist/ArtistRepositoryImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/repositories/Document/DocumentRepositoryImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/repositories/Group/GroupRepositoryImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="65" selection-start-line="2" selection-start-column="65" selection-end-line="2" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/repositories/MultiEvent/MultiEventRepositoryImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="75" selection-start-line="2" selection-start-column="75" selection-end-line="2" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/repositories/PhysicalAsset/PhysicalAssetRepositoryImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
-          <caret line="2" column="40" selection-start-line="2" selection-start-column="40" selection-end-line="2" selection-end-column="40" />
+          <caret line="2" column="82" selection-start-line="2" selection-start-column="82" selection-end-line="2" selection-end-column="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/repositories/SingleEvent/SingleEventRepositoryImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>

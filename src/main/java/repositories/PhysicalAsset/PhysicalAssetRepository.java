@@ -1,4 +1,7 @@
 package repositories.PhysicalAsset;
 
-public interface PhysicalAssetRepository {
+import models.PhysicalAsset;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface PhysicalAssetRepository extends JpaRepository<PhysicalAsset, Long>, PhysicalAssetRepositoryCustom {
 }

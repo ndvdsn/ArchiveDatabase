@@ -1,4 +1,4 @@
 package repositories.MultiEvent;
 
-public class MultiEventRepositoryImpl {
+public class MultiEventRepositoryImpl implements MultiEventRepositoryCustom {
 }

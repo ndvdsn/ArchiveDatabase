@@ -1,4 +1,4 @@
 package repositories.Artist;
 
-public class ArtistRepositoryImpl {
+public class ArtistRepositoryImpl implements ArtistRepositoryCustom {
 }

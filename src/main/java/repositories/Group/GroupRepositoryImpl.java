@@ -1,4 +1,4 @@
 package repositories.Group;
 
-public class GroupRepositoryImpl {
+public class GroupRepositoryImpl implements GroupRepositoryCustom {
 }
