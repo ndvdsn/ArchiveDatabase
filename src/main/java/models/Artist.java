@@ -24,7 +24,7 @@ public class Artist {
     @JsonIgnoreProperties("artists")
     @ManyToOne
     @JoinColumn(name = "ensemble_id", nullable = false)
-    private Group ensemble;
+    private String group;
 
     @JsonIgnoreProperties("artists")
     @ManyToMany
@@ -61,12 +61,12 @@ public class Artist {
         this.country = country;
     }
 
-    public Group getEnsemble() {
-        return ensemble;
+    public String getGroup() {
+        return group;
     }
 
-    public void setEnsemble(Group ensemble) {
-        this.ensemble = ensemble;
+    public void setGroup(String group) {
+        this.group = group;
     }
 
     public List<SingleEvent> getSingleEvents() {
