@@ -1,30 +1,59 @@
 package models;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import org.hibernate.annotations.Cascade;
+
+import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
+
 public class Document {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @Column(name = "type")
     private String type; // eg audio or video
 
+    @Column(name = "fileName")
     private String fileName;
 
+    @Column(name = "format")
     private String format; // eg wav/mp3/.mov etc
 
+    @Column(name = "fileSize")
     private Double fileSize;
 
+    @Column(name = "duration")
     private Double duration;
 
+    @Column(name = "documentNotes")
     private String documentNotes;
 
+    @Column(name = "hierarchy")
+    private String hierarchy;
+
+    @JsonIgnoreProperties("singleEvents")
+    @ManyToOne
+    @JoinColumn(name = "singleEvent_id", nullable = false)
     private SingleEvent singleEvent;
 
-    private Artist artist;
+    @JsonIgnoreProperties("documents")
+    @ManyToMany
+    @Cascade(org.hibernate.annotations.CascadeType.SAVE_UPDATE)
+    @JoinTable(
+            joinColumns = {@JoinColumn(name = "document_id", nullable = false, updatable = false)},
+            inverseJoinColumns = {@JoinColumn(name = "artist_id", nullable = false, updatable = false)}
+    )
+
+    private List<Artist> artists;
 
 //    need to get a comprehensive analysis of the data types etc. might be helpful to build up a hierachy of classes or
 //    models where the inheritance hierarchy matches the hierarchy of the documents: source, master, transcoded big, transcoded small etc
 
 
-    public Document(Long id, String type, String fileName, String format, Double fileSize, Double duration, String documentNotes, SingleEvent singleEvent, Artist artist) {
+    public Document(Long id, String type, String fileName, String format, Double fileSize, Double duration, String documentNotes, String hierarchy, SingleEvent singleEvent) {
         this.id = id;
         this.type = type;
         this.fileName = fileName;
@@ -32,8 +61,9 @@ public class Document {
         this.fileSize = fileSize;
         this.duration = duration;
         this.documentNotes = documentNotes;
+        this.hierarchy = hierarchy;
         this.singleEvent = singleEvent;
-        this.artist = artist;
+        this.artists = new ArrayList<Artist>();
     }
 
     public Long getId() {
@@ -92,6 +122,14 @@ public class Document {
         this.documentNotes = documentNotes;
     }
 
+    public String getHierarchy() {
+        return hierarchy;
+    }
+
+    public void setHierarchy(String hierarchy) {
+        this.hierarchy = hierarchy;
+    }
+
     public SingleEvent getSingleEvent() {
         return singleEvent;
     }
@@ -100,11 +138,11 @@ public class Document {
         this.singleEvent = singleEvent;
     }
 
-    public Artist getArtist() {
-        return artist;
+    public List<Artist> getArtists() {
+        return artists;
     }
 
-    public void setArtist(Artist artist) {
-        this.artist = artist;
+    public void setArtists(List<Artist> artists) {
+        this.artists = artists;
     }
 }
