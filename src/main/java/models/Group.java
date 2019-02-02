@@ -6,7 +6,7 @@ import org.hibernate.annotations.Cascade;
 import javax.persistence.*;
 import java.util.List;
 
-public class Ensemble {
+public class Group {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -20,7 +20,7 @@ public class Ensemble {
     @OneToMany(mappedBy = "ensemble", fetch = FetchType.LAZY)
     private List<Artist> artists;
 
-    public Ensemble(Long id, String name, List<Artist> artists) {
+    public Group(Long id, String name, List<Artist> artists) {
         this.id = id;
         this.name = name;
         this.artists = artists;

@@ -24,7 +24,7 @@ public class Artist {
     @JsonIgnoreProperties("artists")
     @ManyToOne
     @JoinColumn(name = "ensemble_id", nullable = false)
-    private Ensemble ensemble;
+    private Group ensemble;
 
     @JsonIgnoreProperties("artists")
     @ManyToMany
@@ -61,11 +61,11 @@ public class Artist {
         this.country = country;
     }
 
-    public Ensemble getEnsemble() {
+    public Group getEnsemble() {
         return ensemble;
     }
 
-    public void setEnsemble(Ensemble ensemble) {
+    public void setEnsemble(Group ensemble) {
         this.ensemble = ensemble;
     }
 
