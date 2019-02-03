@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="712565bb-d22b-46fb-9a90-c28243ac635d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/components/DataLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/components/DataLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/Artist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Artist.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -72,13 +72,13 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="13" />
-          <entry key="java" value="7344" />
+          <entry key="java" value="7564" />
           <entry key="xml" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="7344" />
+          <entry key="JAVA" value="7564" />
           <entry key="PLAIN_TEXT" value="13" />
           <entry key="XML" value="2" />
         </counts>
@@ -104,7 +104,7 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/java/models/MultiEvent.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="345">
+                <state relative-caret-position="19">
                   <caret line="23" column="8" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
                   <folding>
                     <element signature="imports" expanded="true" />
@@ -146,10 +146,13 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/models/Artist.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="720">
-                  <caret line="66" selection-start-line="66" selection-end-line="66" />
+                <state relative-caret-position="624">
+                  <caret line="64" column="29" selection-start-line="64" selection-start-column="29" selection-end-line="64" selection-end-column="29" />
                   <folding>
                     <element signature="imports" expanded="true" />
+                    <element signature="e#1526#1527#0" expanded="true" />
+                    <element signature="e#1567#1568#0" expanded="true" />
+                    <element signature="e#1601#1602#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -158,8 +161,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/java/components/DataLoader.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="308">
-                  <caret line="65" column="39" lean-forward="true" selection-start-line="65" selection-start-column="39" selection-end-line="65" selection-end-column="39" />
+                <state relative-caret-position="355">
+                  <caret line="64" column="62" selection-start-line="64" selection-start-column="62" selection-end-line="64" selection-end-column="62" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -203,7 +206,6 @@
         <option value="$PROJECT_DIR$/src/main/java/repositories/SingleEvent/SingleEventREpositoryImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/repositories/SingleEvent/SingleEventRepositoryImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/projections/EmbedInfoInArtist.java" />
-        <option value="$PROJECT_DIR$/src/main/java/models/Artist.java" />
         <option value="$PROJECT_DIR$/src/main/java/repositories/Artist/ArtistRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/projections/EmbedInfoInDocument.java" />
         <option value="$PROJECT_DIR$/src/main/java/repositories/Document/DocumentRepository.java" />
@@ -218,6 +220,7 @@
         <option value="$PROJECT_DIR$/src/main/java/models/SingleEvent.java" />
         <option value="$PROJECT_DIR$/src/main/java/models/Document.java" />
         <option value="$PROJECT_DIR$/src/main/java/models/Group.java" />
+        <option value="$PROJECT_DIR$/src/main/java/models/Artist.java" />
         <option value="$PROJECT_DIR$/src/main/java/components/DataLoader.java" />
       </list>
     </option>
@@ -230,8 +233,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="6" />
-    <option name="y" value="23" />
+    <option name="x" value="-20" />
+    <option name="y" value="154" />
     <option name="width" value="1280" />
     <option name="height" value="716" />
   </component>
@@ -289,6 +292,14 @@
               <item name="ArchiveDatabase" type="b2602c69:ProjectViewProjectNode" />
               <item name="ArchiveDatabase" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ArchiveDatabase" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ArchiveDatabase" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -320,6 +331,9 @@
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.arika.ArchiveDatabase" />
+    </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="repositories.Artist" />
     </key>
@@ -359,9 +373,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="6" y="23" width="1280" height="716" extended-state="0" />
+    <frame x="-20" y="154" width="1280" height="716" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27382874" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27382874" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -375,7 +390,7 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49919224" weight="0.32852563" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.49676898" visible="true" weight="0.19070514" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49676898" visible="true" weight="0.19070514" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.503231" side_tool="true" visible="true" weight="0.19070514" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32852563" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -684,7 +699,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/models/MultiEvent.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
+        <state relative-caret-position="19">
           <caret line="23" column="8" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -696,18 +711,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/models/Artist.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="66" selection-start-line="66" selection-end-line="66" />
+        <state relative-caret-position="624">
+          <caret line="64" column="29" selection-start-line="64" selection-start-column="29" selection-end-line="64" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1526#1527#0" expanded="true" />
+            <element signature="e#1567#1568#0" expanded="true" />
+            <element signature="e#1601#1602#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/components/DataLoader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="65" column="39" lean-forward="true" selection-start-line="65" selection-start-column="39" selection-end-line="65" selection-end-column="39" />
+        <state relative-caret-position="355">
+          <caret line="64" column="62" selection-start-line="64" selection-start-column="62" selection-end-line="64" selection-end-column="62" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

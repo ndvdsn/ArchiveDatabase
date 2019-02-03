@@ -24,7 +24,7 @@ public class Artist {
     @JsonIgnoreProperties("artists")
     @ManyToOne
     @JoinColumn(name = "ensemble_id", nullable = false)
-    private String group;
+    private Group group;
 
     @JsonIgnoreProperties("artists")
     @ManyToMany
@@ -32,9 +32,10 @@ public class Artist {
     @JoinTable(joinColumns = {@JoinColumn(name = "artist_id", nullable = false, updatable = false)}, inverseJoinColumns = {@JoinColumn(name = "singleEvent_id", nullable = false, updatable = false)})
     private List<SingleEvent> singleEvents;
 
-    public Artist(String name, String group, String country){
+    public Artist(String name, Group group, String country){
         this.name = name;
         this.country = country;
+        this.group = group;
     }
 
     public Long getId() {
@@ -61,11 +62,11 @@ public class Artist {
         this.country = country;
     }
 
-    public String getGroup() {
+    public Group getGroup() {
         return group;
     }
 
-    public void setGroup(String group) {
+    public void setGroup(Group group) {
         this.group = group;
     }
 

@@ -59,10 +59,10 @@ public class DataLoader implements ApplicationRunner {
         Artist artist1 = new Artist("Keiji Haino", vajra, "Japan");
         artistRepository.save(artist1);
 
-        Artist artist2 = new Artist("Kan Mikami", "Vajra", "Japan");
+        Artist artist2 = new Artist("Kan Mikami", vajra, "Japan");
         artistRepository.save(artist2);
 
-        Artist artist3 = new Artist("Toshiaki Ishizuka", "Vajra", "Japan");
+        Artist artist3 = new Artist("Toshiaki Ishizuka", vajra, "Japan");
         artistRepository.save(artist3);
 
         MultiEvent instal04 = new MultiEvent("Instal 04", 2004);
@@ -73,6 +73,9 @@ public class DataLoader implements ApplicationRunner {
 
         Document document1 = new Document("Audio", "INSTAL_04_Vajra.wav", "WAV", 44.13, 0.45, "Recorded by so and so from the booth", "Master", vajra_performance);
         documentRepository.save(document1);
+
+        PhysicalAsset vajraMinidisc = new PhysicalAsset("Audio", "Minidisc", "One of 10", "16", "Transcribed 2011", "Box 2");
+        physicalAssetRepository.save(vajraMinidisc);
 
 
 
