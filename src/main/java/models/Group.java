@@ -20,7 +20,7 @@ public class Group {
     @OneToMany(mappedBy = "ensemble", fetch = FetchType.LAZY)
     private List<Artist> artists;
 
-    public Group(Long id, String name, List<Artist> artists) {
+    public Group(String name) {
         this.id = id;
         this.name = name;
         this.artists = artists;

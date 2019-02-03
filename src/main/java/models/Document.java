@@ -53,7 +53,7 @@ public class Document {
 //    models where the inheritance hierarchy matches the hierarchy of the documents: source, master, transcoded big, transcoded small etc
 
 
-    public Document(Long id, String type, String fileName, String format, Double fileSize, Double duration, String documentNotes, String hierarchy, SingleEvent singleEvent) {
+    public Document(String type, String fileName, String format, Double fileSize, Double duration, String documentNotes, String hierarchy, SingleEvent singleEvent) {
         this.id = id;
         this.type = type;
         this.fileName = fileName;
