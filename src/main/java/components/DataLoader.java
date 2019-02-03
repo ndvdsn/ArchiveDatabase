@@ -44,7 +44,7 @@ public class DataLoader implements ApplicationRunner {
 
     public void run(ApplicationArguments args) {
 
-        DateFormat sfd = new SimpleDataFormat("EEE, d MMM yyyy HH:mm:ss Z");
+        SimpleDateFormat sfd = new SimpleDataFormat();
         String singleEventDate = "Thu, 17 Oct 2004 22:00:00 +0100";
         Date date01 = null;
         try {
@@ -68,7 +68,7 @@ public class DataLoader implements ApplicationRunner {
         MultiEvent instal04 = new MultiEvent("Instal 04", 2004);
         multiEventRepository.save(instal04);
 
-        SingleEvent vajra_performance = new SingleEvent("Vajra", 2004, "Glasgow", "The Arches", );
+        SingleEvent vajra_performance = new SingleEvent("Vajra", date01, "Glasgow", "The Arches", );
         singleEventRepository.save(vajra_performance);
 
         Document document1 = new Document("Audio", "INSTAL_04_Vajra.wav", "WAV", 44.13, 0.45, "Recorded by so and so from the booth", "Master", vajra_performance);
