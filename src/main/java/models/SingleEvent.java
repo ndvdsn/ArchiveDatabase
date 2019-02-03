@@ -35,6 +35,8 @@ public class SingleEvent {
     )
     private List<Artist> artists;
 
+    @ManyToOne
+    @JoinColumn(name="multiEvent_id", nullable=false)
     private MultiEvent multiEvent;
 
 
