@@ -83,7 +83,20 @@ public class DataLoader implements ApplicationRunner {
         vajra.addArtist(artist1);
         groupRepository.save(vajra);
 
+        vajra.addArtist(artist2);
+        groupRepository.save(vajra);
 
+        vajra.addArtist(artist3);
+        groupRepository.save(vajra);
+
+        vajra_performance.addArtist(artist1);
+        singleEventRepository.save(vajra_performance);
+
+        vajra_performance.addArtist(artist2);
+        singleEventRepository.save(vajra_performance);
+
+        vajra_performance.addArtist(artist3);
+        singleEventRepository.save(vajra_performance);
 
 
 //        jack.addRaid(raid1);
