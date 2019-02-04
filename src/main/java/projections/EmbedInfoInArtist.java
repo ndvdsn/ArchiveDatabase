@@ -1,6 +1,7 @@
 package projections;
 
 import models.Artist;
+import models.Group;
 import models.SingleEvent;
 import org.springframework.data.rest.core.config.Projection;
 
@@ -11,6 +12,6 @@ public interface EmbedInfoInArtist {
     Long getId();
     String getName();
     String getCountry();
-    String getGroup();
+    Group getGroup();
     List<SingleEvent> getSingleEvents();
 }

@@ -12,8 +12,9 @@ import repositories.MultiEvent.MultiEventRepository;
 import repositories.PhysicalAsset.PhysicalAssetRepository;
 import repositories.SingleEvent.SingleEventRepository;
 
-import java.text.DateFormat;
+
 import java.text.ParseException;
+
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -44,7 +45,9 @@ public class DataLoader implements ApplicationRunner {
 
     public void run(ApplicationArguments args) {
 
-        SimpleDateFormat sfd = new SimpleDataFormat();
+
+
+        SimpleDateFormat sfd = new SimpleDateFormat();
         String singleEventDate = "Thu, 17 Oct 2004 22:00:00 +0100";
         Date date01 = null;
         try {
@@ -68,7 +71,7 @@ public class DataLoader implements ApplicationRunner {
         MultiEvent instal04 = new MultiEvent("Instal 04", 2004);
         multiEventRepository.save(instal04);
 
-        SingleEvent vajra_performance = new SingleEvent("Vajra", date01, "Glasgow", "The Arches", );
+        SingleEvent vajra_performance = new SingleEvent("Vajra", date01, "Glasgow", "The Arches", instal04);
         singleEventRepository.save(vajra_performance);
 
         Document document1 = new Document("Audio", "INSTAL_04_Vajra.wav", "WAV", 44.13, 0.45, "Recorded by so and so from the booth", "Master", vajra_performance);
