@@ -70,6 +70,8 @@ public class Artist {
         this.group = group;
     }
 
+
+
     public List<SingleEvent> getSingleEvents() {
         return singleEvents;
     }
@@ -77,4 +79,10 @@ public class Artist {
     public void setSingleEvents(List<SingleEvent> singleEvents) {
         this.singleEvents = singleEvents;
     }
+
+    public void addSingleEvent(SingleEvent singleEvent){
+        this.singleEvents.add(singleEvent);
+    }
+
+
 }

@@ -49,4 +49,8 @@ public class Group {
     public void setArtists(List<Artist> artists) {
         this.artists = artists;
     }
+
+    public void addArtist(Artist artist){
+        this.artists.add(artist);
+    }
 }

@@ -113,4 +113,8 @@ public class SingleEvent {
     public void setMultiEvent(MultiEvent multiEvent) {
         this.multiEvent = multiEvent;
     }
+
+    public void addArtist(Artist artist){
+        this.artists.add(artist);
+    }
 }

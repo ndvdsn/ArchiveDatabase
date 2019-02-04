@@ -80,6 +80,21 @@ public class DataLoader implements ApplicationRunner {
         PhysicalAsset vajraMinidisc = new PhysicalAsset("Audio", "Minidisc", "One of 10", "16", "Transcribed 2011", "Box 2");
         physicalAssetRepository.save(vajraMinidisc);
 
+        vajra.addArtist(artist1);
+        groupRepository.save(vajra);
+
+
+
+
+//        jack.addRaid(raid1);
+//        jack.addRaid(raid2);
+//        pirateRepository.save(jack);
+//
+//        raid2.addPirate(john);
+//        raidRepository.save(raid2);
+
+
+
 
 
     }
