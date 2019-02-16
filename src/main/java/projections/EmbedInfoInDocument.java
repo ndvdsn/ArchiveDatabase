@@ -2,6 +2,7 @@ package projections;
 
 import models.Artist;
 import models.Document;
+import models.Permission;
 import org.springframework.data.rest.core.config.Projection;
 
 import java.util.List;
@@ -18,4 +19,5 @@ public interface EmbedInfoInDocument {
     String getHierarchy();
     String getSingleEventName();
     List<Artist> getArtists();
+    List<Permission> getPermissions();
 }
