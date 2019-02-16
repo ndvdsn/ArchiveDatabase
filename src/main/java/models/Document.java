@@ -49,6 +49,20 @@ public class Document {
 
     private List<Artist> artists;
 
+
+
+    @JsonIgnoreProperties("documents")
+    @ManyToMany
+    @Cascade(org.hibernate.annotations.CascadeType.SAVE_UPDATE)
+    @JoinTable(
+            joinColumns = {@JoinColumn(name = "document_id", nullable = false, updatable = false)},
+            inverseJoinColumns = {@JoinColumn(name = "permission_id", nullable = false, updatable = false)}
+    )
+
+
+
+    private List<Permission> permissions;
+
 //    need to get a comprehensive analysis of the data types etc. might be helpful to build up a hierachy of classes or
 //    models where the inheritance hierarchy matches the hierarchy of the documents: source, master, transcoded big, transcoded small etc
 
@@ -64,6 +78,7 @@ public class Document {
         this.hierarchy = hierarchy;
         this.singleEvent = singleEvent;
         this.artists = new ArrayList<Artist>();
+        this.permissions = new ArrayList<Permission>();
     }
 
     public Long getId() {
@@ -144,5 +159,13 @@ public class Document {
 
     public void setArtists(List<Artist> artists) {
         this.artists = artists;
+    }
+
+    public List<Permission> getPermissions() {
+        return permissions;
+    }
+
+    public void setPermissions(List<Permission> permissions) {
+        this.permissions = permissions;
     }
 }
