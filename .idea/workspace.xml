@@ -2,83 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="712565bb-d22b-46fb-9a90-c28243ac635d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/components/DataLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arika/ArchiveDatabase/components/DataLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/models/Artist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arika/ArchiveDatabase/models/Artist.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/models/Document.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arika/ArchiveDatabase/models/Document.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/models/Group.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arika/ArchiveDatabase/models/Group.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/models/MultiEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arika/ArchiveDatabase/models/MultiEvent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/models/Permission.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arika/ArchiveDatabase/models/Permission.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/models/PhysicalAsset.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arika/ArchiveDatabase/models/PhysicalAsset.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/models/SingleEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arika/ArchiveDatabase/models/SingleEvent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/projections/EmbedInfoInArtist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arika/ArchiveDatabase/projections/EmbedInfoInArtist.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/projections/EmbedInfoInDocument.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arika/ArchiveDatabase/projections/EmbedInfoInDocument.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/projections/EmbedInfoInGroup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arika/ArchiveDatabase/projections/EmbedInfoInGroup.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/projections/EmbedInfoInMultiEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arika/ArchiveDatabase/projections/EmbedInfoInMultiEvent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/projections/EmbedInfoInPermission.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arika/ArchiveDatabase/projections/EmbedInfoInPermission.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/projections/EmbedInfoInPhysicalAsset.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arika/ArchiveDatabase/projections/EmbedInfoInPhysicalAsset.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/projections/EmbedInfoInSingleEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arika/ArchiveDatabase/projections/EmbedInfoInSingleEvent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/repositories/Artist/ArtistRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arika/ArchiveDatabase/repositories/Artist/ArtistRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/repositories/Artist/ArtistRepositoryCustom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arika/ArchiveDatabase/repositories/Artist/ArtistRepositoryCustom.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/repositories/Artist/ArtistRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arika/ArchiveDatabase/repositories/Artist/ArtistRepositoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/repositories/Document/DocumentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arika/ArchiveDatabase/repositories/Document/DocumentRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/repositories/Document/DocumentRepositoryCustom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arika/ArchiveDatabase/repositories/Document/DocumentRepositoryCustom.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/repositories/Document/DocumentRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arika/ArchiveDatabase/repositories/Document/DocumentRepositoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/repositories/Group/GroupRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arika/ArchiveDatabase/repositories/Group/GroupRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/repositories/Group/GroupRepositoryCustom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arika/ArchiveDatabase/repositories/Group/GroupRepositoryCustom.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/repositories/Group/GroupRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arika/ArchiveDatabase/repositories/Group/GroupRepositoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/repositories/MultiEvent/MultiEventRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arika/ArchiveDatabase/repositories/MultiEvent/MultiEventRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/repositories/MultiEvent/MultiEventRepositoryCustom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arika/ArchiveDatabase/repositories/MultiEvent/MultiEventRepositoryCustom.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/repositories/MultiEvent/MultiEventRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arika/ArchiveDatabase/repositories/MultiEvent/MultiEventRepositoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/repositories/Permission/PermissionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arika/ArchiveDatabase/repositories/Permission/PermissionRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/repositories/Permission/PermissionRepositoryCustom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arika/ArchiveDatabase/repositories/Permission/PermissionRepositoryCustom.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/repositories/Permission/PermissionRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arika/ArchiveDatabase/repositories/Permission/PermissionRepositoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/repositories/PhysicalAsset/PhysicalAssetRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arika/ArchiveDatabase/repositories/PhysicalAsset/PhysicalAssetRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/repositories/PhysicalAsset/PhysicalAssetRepositoryCustom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arika/ArchiveDatabase/repositories/PhysicalAsset/PhysicalAssetRepositoryCustom.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/repositories/PhysicalAsset/PhysicalAssetRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arika/ArchiveDatabase/repositories/PhysicalAsset/PhysicalAssetRepositoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/repositories/SingleEvent/SingleEventRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arika/ArchiveDatabase/repositories/SingleEvent/SingleEventRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/repositories/SingleEvent/SingleEventRepositoryCustom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arika/ArchiveDatabase/repositories/SingleEvent/SingleEventRepositoryCustom.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/repositories/SingleEvent/SingleEventRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arika/ArchiveDatabase/repositories/SingleEvent/SingleEventRepositoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/arika/ArchiveDatabase/ArchiveDatabaseApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/arika/ArchiveDatabase/ArchiveDatabaseApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/components/DataLoader.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/models/Artist.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/models/Document.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/models/Group.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/models/MultiEvent.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/models/Permission.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/models/PhysicalAsset.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/models/SingleEvent.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/projections/EmbedInfoInArtist.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/projections/EmbedInfoInDocument.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/projections/EmbedInfoInGroup.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/projections/EmbedInfoInMultiEvent.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/projections/EmbedInfoInPermission.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/projections/EmbedInfoInPhysicalAsset.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/projections/EmbedInfoInSingleEvent.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/repositories/Artist/ArtistRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/repositories/Artist/ArtistRepositoryCustom.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/repositories/Artist/ArtistRepositoryImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/repositories/Document/DocumentRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/repositories/Document/DocumentRepositoryCustom.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/repositories/Document/DocumentRepositoryImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/repositories/Group/GroupRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/repositories/Group/GroupRepositoryCustom.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/repositories/Group/GroupRepositoryImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/repositories/MultiEvent/MultiEventRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/repositories/MultiEvent/MultiEventRepositoryCustom.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/repositories/MultiEvent/MultiEventRepositoryImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/repositories/Permission/PermissionRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/repositories/Permission/PermissionRepositoryCustom.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/repositories/Permission/PermissionRepositoryImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/repositories/PhysicalAsset/PhysicalAssetRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/repositories/PhysicalAsset/PhysicalAssetRepositoryCustom.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/repositories/PhysicalAsset/PhysicalAssetRepositoryImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/repositories/SingleEvent/SingleEventRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/repositories/SingleEvent/SingleEventRepositoryCustom.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/repositories/SingleEvent/SingleEventRepositoryImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/arika/ArchiveDatabase/ArchiveDatabaseApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/arika/ArchiveDatabase/ArchiveDatabaseApplicationTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/arika/ArchiveDatabase/models/Artist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arika/ArchiveDatabase/models/Artist.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/arika/ArchiveDatabase/models/Group.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arika/ArchiveDatabase/models/Group.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -123,6 +48,7 @@
           <entry key="project.closed" value="5" />
           <entry key="project.open.time.0" value="2" />
           <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.15" value="1" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.20" value="2" />
@@ -131,7 +57,7 @@
           <entry key="project.open.time.29" value="2" />
           <entry key="project.open.time.37" value="1" />
           <entry key="project.open.time.7" value="1" />
-          <entry key="project.opened" value="13" />
+          <entry key="project.opened" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -155,14 +81,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="13" />
-          <entry key="java" value="10161" />
+          <entry key="java" value="10722" />
           <entry key="properties" value="8" />
           <entry key="xml" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="10161" />
+          <entry key="JAVA" value="10722" />
           <entry key="PLAIN_TEXT" value="13" />
           <entry key="Properties" value="8" />
           <entry key="XML" value="2" />
@@ -172,23 +98,45 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/arika/ArchiveDatabase/models/Artist.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="10" selection-start-line="10" selection-end-line="10" />
+            <state relative-caret-position="92">
+              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1405#1406#0" expanded="true" />
+                <element signature="e#1430#1431#0" expanded="true" />
+                <element signature="e#1464#1465#0" expanded="true" />
+                <element signature="e#1492#1493#0" expanded="true" />
+                <element signature="e#1523#1524#0" expanded="true" />
+                <element signature="e#1550#1551#0" expanded="true" />
+                <element signature="e#1590#1591#0" expanded="true" />
+                <element signature="e#1622#1623#0" expanded="true" />
+                <element signature="e#1656#1657#0" expanded="true" />
+                <element signature="e#1686#1687#0" expanded="true" />
+                <element signature="e#1732#1733#0" expanded="true" />
+                <element signature="e#1770#1771#0" expanded="true" />
+                <element signature="e#1808#1809#0" expanded="true" />
+                <element signature="e#1837#1838#0" expanded="true" />
+                <element signature="e#1886#1887#0" expanded="true" />
+                <element signature="e#1922#1923#0" expanded="true" />
+                <element signature="e#1972#1973#0" expanded="true" />
+                <element signature="e#2007#2008#0" expanded="true" />
+                <element signature="e#2074#2075#0" expanded="true" />
+                <element signature="e#2122#2123#0" expanded="true" />
+                <element signature="e#2180#2181#0" expanded="true" />
+                <element signature="e#2230#2231#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/arika/ArchiveDatabase/models/Group.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="112">
-              <caret line="17" column="6" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="43" />
+            <state relative-caret-position="465">
+              <caret line="31" column="31" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -253,8 +201,8 @@
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/java/components/DataLoader.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/arika/ArchiveDatabase/components/DataLoader.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/arika/ArchiveDatabase/models/Artist.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/arika/ArchiveDatabase/models/Group.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/arika/ArchiveDatabase/models/Artist.java" />
       </list>
     </option>
   </component>
@@ -266,7 +214,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
+    <option name="x" value="-14" />
+    <option name="y" value="73" />
     <option name="width" value="1280" />
     <option name="height" value="716" />
   </component>
@@ -397,9 +346,9 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="AndroidView" />
       <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -578,9 +527,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="716" extended-state="0" />
+    <frame x="-64" y="395" width="1280" height="716" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.30371568" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3085622" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -812,9 +762,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -932,22 +879,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/arika/ArchiveDatabase/models/Artist.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/arika/ArchiveDatabase/models/Group.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        <state relative-caret-position="465">
+          <caret line="31" column="31" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/arika/ArchiveDatabase/models/Group.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/arika/ArchiveDatabase/models/Artist.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="17" column="6" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="43" />
+        <state relative-caret-position="92">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1405#1406#0" expanded="true" />
+            <element signature="e#1430#1431#0" expanded="true" />
+            <element signature="e#1464#1465#0" expanded="true" />
+            <element signature="e#1492#1493#0" expanded="true" />
+            <element signature="e#1523#1524#0" expanded="true" />
+            <element signature="e#1550#1551#0" expanded="true" />
+            <element signature="e#1590#1591#0" expanded="true" />
+            <element signature="e#1622#1623#0" expanded="true" />
+            <element signature="e#1656#1657#0" expanded="true" />
+            <element signature="e#1686#1687#0" expanded="true" />
+            <element signature="e#1732#1733#0" expanded="true" />
+            <element signature="e#1770#1771#0" expanded="true" />
+            <element signature="e#1808#1809#0" expanded="true" />
+            <element signature="e#1837#1838#0" expanded="true" />
+            <element signature="e#1886#1887#0" expanded="true" />
+            <element signature="e#1922#1923#0" expanded="true" />
+            <element signature="e#1972#1973#0" expanded="true" />
+            <element signature="e#2007#2008#0" expanded="true" />
+            <element signature="e#2074#2075#0" expanded="true" />
+            <element signature="e#2122#2123#0" expanded="true" />
+            <element signature="e#2180#2181#0" expanded="true" />
+            <element signature="e#2230#2231#0" expanded="true" />
           </folding>
         </state>
       </provider>

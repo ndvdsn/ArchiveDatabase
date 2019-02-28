@@ -4,6 +4,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import org.hibernate.annotations.Cascade;
 
 import javax.persistence.*;
+import java.util.ArrayList;
 import java.util.List;
 
 public class Group {
@@ -15,15 +16,20 @@ public class Group {
     @Column(name = "name")
     private String name;
 
-//    @JsonIgnoreProperties("singleEvents")
+    @JsonIgnoreProperties("groups")
+    @ManyToMany
     @Cascade(org.hibernate.annotations.CascadeType.DELETE)
-    @OneToMany(mappedBy = "group", fetch = FetchType.LAZY)
+    @JoinTable(
+            name = "artists_groups",
+            joinColumns = {@JoinColumn(name = "group_id", nullable = false, updatable = false)},
+            inverseJoinColumns = {@JoinColumn(name="artist_id", nullable = false, updatable = false)}
+    )
     private List<Artist> artists;
 
     public Group(String name) {
         this.id = id;
         this.name = name;
-        this.artists = artists;
+        this.artists = new ArrayList<Artist>();
     }
 
     public Long getId() {

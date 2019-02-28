@@ -4,6 +4,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import org.hibernate.annotations.Cascade;
 
 import javax.persistence.*;
+import java.util.ArrayList;
 import java.util.List;
 
 @Entity
@@ -22,9 +23,14 @@ public class Artist {
     private String country;
 
     @JsonIgnoreProperties("artists")
-    @ManyToOne
-    @JoinColumn(name = "group_id", nullable = false)
-    private Group group;
+    @ManyToMany
+    @Cascade(org.hibernate.annotations.CascadeType.SAVE_UPDATE)
+    @JoinTable(
+            joinColumns = {@JoinColumn(name = "artist_id", nullable = false, updatable = false)},
+            inverseJoinColumns = {@JoinColumn(name = "group_id", nullable = false, updatable = false)}
+    )
+    private List<Group> groups;
+
 
     @JsonIgnoreProperties("artists")
     @ManyToMany
@@ -32,10 +38,10 @@ public class Artist {
     @JoinTable(joinColumns = {@JoinColumn(name = "artist_id", nullable = false, updatable = false)}, inverseJoinColumns = {@JoinColumn(name = "singleEvent_id", nullable = false, updatable = false)})
     private List<SingleEvent> singleEvents;
 
-    public Artist(String name, Group group, String country){
+    public Artist(String name, String country){
         this.name = name;
         this.country = country;
-        this.group = group;
+        this.groups = new ArrayList<Group>();
     }
 
     public Long getId() {
@@ -62,15 +68,13 @@ public class Artist {
         this.country = country;
     }
 
-    public Group getGroup() {
-        return group;
+    public List<Group> getGroups() {
+        return groups;
     }
 
-    public void setGroup(Group group) {
-        this.group = group;
+    public void setGroups(List<Group> groups) {
+        this.groups = groups;
     }
-
-
 
     public List<SingleEvent> getSingleEvents() {
         return singleEvents;
