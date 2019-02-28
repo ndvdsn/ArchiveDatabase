@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="712565bb-d22b-46fb-9a90-c28243ac635d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arika/ArchiveDatabase/models/Artist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arika/ArchiveDatabase/models/Artist.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arika/ArchiveDatabase/models/Group.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arika/ArchiveDatabase/models/Group.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/arika/ArchiveDatabase/components/DataLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arika/ArchiveDatabase/components/DataLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/arika/ArchiveDatabase/models/Document.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arika/ArchiveDatabase/models/Document.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/arika/ArchiveDatabase/models/MultiEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arika/ArchiveDatabase/models/MultiEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/arika/ArchiveDatabase/models/SingleEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arika/ArchiveDatabase/models/SingleEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/arika/ArchiveDatabase/ArchiveDatabaseApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/arika/ArchiveDatabase/ArchiveDatabaseApplicationTests.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -63,7 +66,7 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="1" />
-          <entry key="java" value="148" />
+          <entry key="java" value="155" />
           <entry key="mvnw" value="1" />
           <entry key="properties" value="1" />
           <entry key="xml" value="3" />
@@ -72,7 +75,7 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="1" />
-          <entry key="JAVA" value="148" />
+          <entry key="JAVA" value="155" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="Properties" value="1" />
           <entry key="XML" value="3" />
@@ -81,14 +84,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="13" />
-          <entry key="java" value="10722" />
+          <entry key="java" value="10760" />
           <entry key="properties" value="8" />
           <entry key="xml" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="10722" />
+          <entry key="JAVA" value="10760" />
           <entry key="PLAIN_TEXT" value="13" />
           <entry key="Properties" value="8" />
           <entry key="XML" value="2" />
@@ -98,11 +101,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/arika/ArchiveDatabase/models/Artist.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+            <state relative-caret-position="135">
+              <caret line="9" selection-start-line="9" selection-end-line="10" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1405#1406#0" expanded="true" />
@@ -127,6 +130,81 @@
                 <element signature="e#2122#2123#0" expanded="true" />
                 <element signature="e#2180#2181#0" expanded="true" />
                 <element signature="e#2230#2231#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/arika/ArchiveDatabase/ArchiveDatabaseApplicationTests.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="303">
+              <caret line="58" column="37" lean-forward="true" selection-start-line="58" selection-start-column="37" selection-end-line="58" selection-end-column="37" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/arika/ArchiveDatabase/models/MultiEvent.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/arika/ArchiveDatabase/models/PhysicalAsset.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="6" column="102" selection-start-line="6" selection-start-column="102" selection-end-line="6" selection-end-column="102" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/arika/ArchiveDatabase/models/Document.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="10" column="24" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/arika/ArchiveDatabase/models/Permission.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="450">
+              <caret line="30" column="7" selection-start-line="30" selection-start-column="7" selection-end-line="37" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/arika/ArchiveDatabase/models/SingleEvent.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="29" lean-forward="true" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/arika/ArchiveDatabase/components/DataLoader.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1005">
+              <caret line="67" column="56" lean-forward="true" selection-start-line="67" selection-start-column="56" selection-end-line="67" selection-end-column="56" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -197,12 +275,15 @@
         <option value="$PROJECT_DIR$/src/main/java/projections/EmbedInfoInPermission.java" />
         <option value="$PROJECT_DIR$/src/main/java/repositories/Permission/PermissionRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/repositories/Permission/PermissionRepositoryImpl.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/arika/ArchiveDatabase/ArchiveDatabaseApplicationTests.java" />
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/java/components/DataLoader.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/arika/ArchiveDatabase/components/DataLoader.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/arika/ArchiveDatabase/models/Group.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/arika/ArchiveDatabase/models/Artist.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/arika/ArchiveDatabase/ArchiveDatabaseApplicationTests.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/arika/ArchiveDatabase/components/DataLoader.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/arika/ArchiveDatabase/models/SingleEvent.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/arika/ArchiveDatabase/models/MultiEvent.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/arika/ArchiveDatabase/models/Document.java" />
       </list>
     </option>
   </component>
@@ -353,7 +434,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="SimpleDateFormat&#9;FILE&#9;jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/lib/rt.jar!/java/text/SimpleDateFormat.class" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550853494506" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551349013495" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
@@ -379,7 +460,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ArchiveDatabaseApplicationTests">
+  <component name="RunManager" selected="JUnit.ArchiveDatabaseApplicationTests.contextLoads">
     <configuration name="ArchiveDatabaseApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.arika.ArchiveDatabase.ArchiveDatabaseApplication" />
       <module name="ArchiveDatabase" />
@@ -464,8 +545,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ArchiveDatabaseApplicationTests" />
         <item itemvalue="JUnit.ArchiveDatabaseApplicationTests.contextLoads" />
+        <item itemvalue="JUnit.ArchiveDatabaseApplicationTests" />
         <item itemvalue="Application.ArchiveDatabaseApplication" />
         <item itemvalue="JUnit.ArchiveDatabaseApplicationTests.createArtistAndGroup" />
         <item itemvalue="JUnit.ArchiveDatabaseApplicationTests.addsingleAndMultiEvents" />
@@ -486,12 +567,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ArchiveDatabaseApplicationTests_createArtistAndGroup - 2019.02.17 at 10h 51m 10s.xml">
-      <configuration name="ArchiveDatabaseApplicationTests.createArtistAndGroup" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ArchiveDatabaseApplicationTests_createArtistAndGroup - 2019.02.17 at 10h 51m 24s.xml">
-      <configuration name="ArchiveDatabaseApplicationTests.createArtistAndGroup" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="ArchiveDatabaseApplicationTests_createArtistAndGroup - 2019.02.17 at 10h 51m 54s.xml">
       <configuration name="ArchiveDatabaseApplicationTests.createArtistAndGroup" configurationId="JUnit" />
     </history-entry>
@@ -516,6 +591,12 @@
     <history-entry file="ArchiveDatabaseApplicationTests - 2019.02.22 at 16h 31m 55s.xml">
       <configuration name="ArchiveDatabaseApplicationTests" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="ArchiveDatabaseApplicationTests_contextLoads - 2019.02.28 at 10h 11m 57s.xml">
+      <configuration name="ArchiveDatabaseApplicationTests.contextLoads" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ArchiveDatabaseApplicationTests_contextLoads - 2019.02.28 at 10h 15m 28s.xml">
+      <configuration name="ArchiveDatabaseApplicationTests.contextLoads" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -527,7 +608,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-64" y="395" width="1280" height="716" extended-state="0" />
+    <frame x="-14" y="73" width="1280" height="716" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3085622" />
@@ -539,7 +620,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info active="true" anchor="bottom" id="Find" order="1" sideWeight="0.49919224" visible="true" weight="0.32852563" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32852563" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32852563" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39903846" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -547,7 +628,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49434572" weight="0.19070514" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5056543" side_tool="true" weight="0.19070514" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32852563" />
-      <window_info anchor="bottom" id="Messages" order="10" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32852563" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -660,13 +741,6 @@
         <state relative-caret-position="-3364" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/arika/ArchiveDatabase/models/Document.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-155">
-          <caret line="53" column="36" selection-start-line="53" selection-start-column="36" selection-end-line="53" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/arika/ArchiveDatabase/repositories/Document/DocumentRepositoryCustom.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -765,47 +839,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/arika/ArchiveDatabase/ArchiveDatabaseApplicationTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-183">
-          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/arika/ArchiveDatabase/models/MultiEvent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="23" column="8" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/arika/ArchiveDatabase/models/Permission.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-423">
-          <caret line="30" column="7" selection-start-line="30" selection-start-column="7" selection-end-line="37" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/arika/ArchiveDatabase/models/PhysicalAsset.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="6" column="102" selection-start-line="6" selection-start-column="102" selection-end-line="6" selection-end-column="102" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/arika/ArchiveDatabase/components/DataLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="58" column="39" selection-start-line="58" selection-start-column="39" selection-end-line="58" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/arika/ArchiveDatabase/projections/EmbedInfoInPermission.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -869,16 +902,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/arika/ArchiveDatabase/models/SingleEvent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1290">
-          <caret line="113" column="14" selection-start-line="113" selection-start-column="14" selection-end-line="113" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/arika/ArchiveDatabase/models/Group.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="465">
@@ -889,10 +912,40 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/arika/ArchiveDatabase/components/DataLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1005">
+          <caret line="67" column="56" lean-forward="true" selection-start-line="67" selection-start-column="56" selection-end-line="67" selection-end-column="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/arika/ArchiveDatabase/models/SingleEvent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="29" lean-forward="true" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/arika/ArchiveDatabase/ArchiveDatabaseApplicationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="58" column="37" lean-forward="true" selection-start-line="58" selection-start-column="37" selection-end-line="58" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/arika/ArchiveDatabase/models/Artist.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+        <state relative-caret-position="135">
+          <caret line="9" selection-start-line="9" selection-end-line="10" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1405#1406#0" expanded="true" />
@@ -918,6 +971,37 @@
             <element signature="e#2180#2181#0" expanded="true" />
             <element signature="e#2230#2231#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/arika/ArchiveDatabase/models/Permission.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="7" selection-start-line="30" selection-start-column="7" selection-end-line="37" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/arika/ArchiveDatabase/models/MultiEvent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/arika/ArchiveDatabase/models/PhysicalAsset.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="6" column="102" selection-start-line="6" selection-start-column="102" selection-end-line="6" selection-end-column="102" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/arika/ArchiveDatabase/models/Document.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="10" column="24" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
         </state>
       </provider>
     </entry>

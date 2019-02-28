@@ -55,7 +55,7 @@ public class ArchiveDatabaseApplicationTests {
 		Group vajra = new Group("Vajra");
 		groupRepository.save(vajra);
 
-		Artist haino = new Artist("Keiji Haino", vajra, "Japan");
+		Artist haino = new Artist("Keiji Haino", "Japan");
 		artistRepository.save(haino);
 	}
 

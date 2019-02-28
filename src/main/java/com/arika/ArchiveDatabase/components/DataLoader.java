@@ -59,13 +59,13 @@ public class DataLoader implements ApplicationRunner {
         Group vajra = new Group("Vajra");
         groupRepository.save(vajra);
 
-        Artist artist1 = new Artist("Keiji Haino", vajra, "Japan");
+        Artist artist1 = new Artist("Keiji Haino", "Japan");
         artistRepository.save(artist1);
 
-        Artist artist2 = new Artist("Kan Mikami", vajra, "Japan");
+        Artist artist2 = new Artist("Kan Mikami", "Japan");
         artistRepository.save(artist2);
 
-        Artist artist3 = new Artist("Toshiaki Ishizuka", vajra, "Japan");
+        Artist artist3 = new Artist("Toshiaki Ishizuka", "Japan");
         artistRepository.save(artist3);
 
         MultiEvent instal04 = new MultiEvent("Instal 04", 2004);
