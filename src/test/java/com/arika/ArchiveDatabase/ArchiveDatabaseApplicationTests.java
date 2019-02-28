@@ -1,17 +1,17 @@
 package com.arika.ArchiveDatabase;
 
-import models.*;
+import com.arika.ArchiveDatabase.models.*;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
-import repositories.Artist.ArtistRepository;
-import repositories.Document.DocumentRepository;
-import repositories.Group.GroupRepository;
-import repositories.MultiEvent.MultiEventRepository;
-import repositories.PhysicalAsset.PhysicalAssetRepository;
-import repositories.SingleEvent.SingleEventRepository;
+import com.arika.ArchiveDatabase.repositories.Artist.ArtistRepository;
+import com.arika.ArchiveDatabase.repositories.Document.DocumentRepository;
+import com.arika.ArchiveDatabase.repositories.Group.GroupRepository;
+import com.arika.ArchiveDatabase.repositories.MultiEvent.MultiEventRepository;
+import com.arika.ArchiveDatabase.repositories.PhysicalAsset.PhysicalAssetRepository;
+import com.arika.ArchiveDatabase.repositories.SingleEvent.SingleEventRepository;
 
 import java.util.Date;
 
@@ -60,7 +60,7 @@ public class ArchiveDatabaseApplicationTests {
 	}
 
 	@Test
-	public void addsingleAndMultiEvents(){
+	public void addSingleAndMultiEvents(){
 
 		MultiEvent episode9 = new MultiEvent("Episode 9", 2014);
 		multiEventRepository.save(episode9);
