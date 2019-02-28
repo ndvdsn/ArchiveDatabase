@@ -1,31 +1,59 @@
 package com.arika.ArchiveDatabase.models;
 
+import org.hibernate.annotations.Cascade;
+
+import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
 
+@Entity
+@Table(name = "physicalAssets")
 
 // an asset is a physical item in the archive. Not a digital archive item. Those come under documents.
 public class PhysicalAsset {
 
+    @Column(name = "type")
     private String type;
 
+    @Column(name = "format")
     private String format;
 
+    @Column(name = "description")
     private String description;
 
+    @Column(name = "itemNumber")
     private String itemNumber;
 
+    @Column(name = "notes")
     private String notes;
 
+    @Column(name = "location")
     private String location;
 
+//    @JsonIgnoreProperties("raids")
+//    @Cascade(org.hibernate.annotations.CascadeType.DELETE)
+//    @OneToMany(mappedBy = "ship", fetch = FetchType.LAZY)
+//    private List<Pirate> pirates;
+
+    @Column(name="documents")
+    @Cascade(org.hibernate.annotations.CascadeType.DELETE)
+    @OneToMany(mappedBy = "physicalAsset", fetch = FetchType.LAZY)
     private List<Document> documents;
 
+    @Column(name="artists")
+    @Cascade(org.hibernate.annotations.CascadeType.DELETE)
+    @OneToMany(mappedBy = "physicalAsset", fetch = FetchType.LAZY)
     private List<Artist> artists;
 
-    private List<SingleEvent> singleEvents;
+//    @ManyToOne
+//    @JoinColumn(name="multiEvent_id", nullable=false)
+//    private MultiEvent multiEvent;
 
-    public PhysicalAsset(String type, String format, String description, String itemNumber, String notes, String location) {
+    @ManyToOne
+    @JoinColumn(name="artist_id", nullable = false)
+    private SingleEvent singleEvent;
+
+    public PhysicalAsset(String type, String format, String description, String itemNumber, String notes, String location, SingleEvent singleEvent) {
         this.type = type;
         this.format = format;
         this.description = description;
@@ -34,7 +62,7 @@ public class PhysicalAsset {
         this.location = location;
         this.documents = new ArrayList<Document>();
         this.artists = new ArrayList<Artist>();
-        this.singleEvents = new ArrayList<SingleEvent>();
+        this.singleEvent = singleEvent;
 
     }
 
@@ -102,11 +130,11 @@ public class PhysicalAsset {
         this.artists = artists;
     }
 
-    public List<SingleEvent> getSingleEvents() {
-        return singleEvents;
+    public SingleEvent getSingleEvent() {
+        return singleEvent;
     }
 
-    public void setSingleEvents(List<SingleEvent> singleEvents) {
-        this.singleEvents = singleEvents;
+    public void setSingleEvent(SingleEvent singleEvent) {
+        this.singleEvent = singleEvent;
     }
 }

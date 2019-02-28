@@ -1,6 +1,7 @@
 package com.arika.ArchiveDatabase.components;
 
 import com.arika.ArchiveDatabase.models.*;
+import com.arika.ArchiveDatabase.repositories.PhysicalAsset.PhysicalAssetRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
@@ -9,7 +10,6 @@ import com.arika.ArchiveDatabase.repositories.Artist.ArtistRepository;
 import com.arika.ArchiveDatabase.repositories.Document.DocumentRepository;
 import com.arika.ArchiveDatabase.repositories.Group.GroupRepository;
 import com.arika.ArchiveDatabase.repositories.MultiEvent.MultiEventRepository;
-import com.arika.ArchiveDatabase.repositories.PhysicalAsset.PhysicalAssetRepository;
 import com.arika.ArchiveDatabase.repositories.SingleEvent.SingleEventRepository;
 
 
