@@ -55,6 +55,10 @@ public class Permission {
         this.dateContacted = dateContacted;
     }
 
+    public Permission(){
+
+    }
+
     public Long getId() {
         return id;
     }

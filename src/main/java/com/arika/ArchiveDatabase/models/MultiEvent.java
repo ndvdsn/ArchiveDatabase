@@ -34,6 +34,10 @@ public class MultiEvent {
         this.events = new ArrayList<SingleEvent>();
     }
 
+    public MultiEvent(){
+
+    }
+
     public Long getId() {
         return id;
     }

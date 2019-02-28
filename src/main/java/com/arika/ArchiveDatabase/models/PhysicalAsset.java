@@ -41,6 +41,7 @@ public class PhysicalAsset {
 
 
     @Column(name="artists")
+    @ManyToMany
     @Cascade(org.hibernate.annotations.CascadeType.SAVE_UPDATE)
     @JoinTable(joinColumns = {@JoinColumn(name = "physicalAsset_id", nullable = false, updatable = false)},
             inverseJoinColumns = {@JoinColumn(name = "artist_id", nullable = false, updatable = false)}
@@ -61,6 +62,10 @@ public class PhysicalAsset {
         this.documents = new ArrayList<Document>();
         this.artists = new ArrayList<Artist>();
         this.singleEvent = singleEvent;
+
+    }
+
+    public PhysicalAsset(){
 
     }
 

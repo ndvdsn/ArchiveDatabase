@@ -44,6 +44,10 @@ public class Artist {
         this.groups = new ArrayList<Group>();
     }
 
+    public Artist(){
+
+    }
+
     public Long getId() {
         return id;
     }

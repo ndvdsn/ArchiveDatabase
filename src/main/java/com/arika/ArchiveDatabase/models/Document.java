@@ -31,7 +31,7 @@ public class Document {
     @Column(name = "duration")
     private Double duration;
 
-    @Column(name = "documentNotes")
+    @Column(name = "documentNotes", nullable = true)
     private String documentNotes;
 
     @Column(name = "hierarchy")
@@ -44,8 +44,9 @@ public class Document {
 
     @JsonIgnoreProperties("documents")
     @ManyToOne
-    @JoinColumn(name = "physicalAsset_id", nullable = false)
+    @JoinColumn(name = "physicalAsset_id", nullable = true)
     private PhysicalAsset physicalAsset;
+
 
     @JsonIgnoreProperties("documents")
     @ManyToMany
@@ -84,6 +85,10 @@ public class Document {
         this.singleEvent = singleEvent;
         this.artists = new ArrayList<Artist>();
         this.permissions = new ArrayList<Permission>();
+    }
+
+    public Document(){
+
     }
 
     public Long getId() {
