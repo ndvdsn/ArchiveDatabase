@@ -12,6 +12,10 @@ import java.util.List;
 // an asset is a physical item in the archive. Not a digital archive item. Those come under documents.
 public class PhysicalAsset {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
     @Column(name = "type")
     private String type;
 
@@ -30,27 +34,21 @@ public class PhysicalAsset {
     @Column(name = "location")
     private String location;
 
-//    @JsonIgnoreProperties("raids")
-//    @Cascade(org.hibernate.annotations.CascadeType.DELETE)
-//    @OneToMany(mappedBy = "ship", fetch = FetchType.LAZY)
-//    private List<Pirate> pirates;
-
     @Column(name="documents")
     @Cascade(org.hibernate.annotations.CascadeType.DELETE)
     @OneToMany(mappedBy = "physicalAsset", fetch = FetchType.LAZY)
     private List<Document> documents;
 
+
     @Column(name="artists")
-    @Cascade(org.hibernate.annotations.CascadeType.DELETE)
-    @OneToMany(mappedBy = "physicalAsset", fetch = FetchType.LAZY)
+    @Cascade(org.hibernate.annotations.CascadeType.SAVE_UPDATE)
+    @JoinTable(joinColumns = {@JoinColumn(name = "physicalAsset_id", nullable = false, updatable = false)},
+            inverseJoinColumns = {@JoinColumn(name = "artist_id", nullable = false, updatable = false)}
+    )
     private List<Artist> artists;
 
-//    @ManyToOne
-//    @JoinColumn(name="multiEvent_id", nullable=false)
-//    private MultiEvent multiEvent;
-
     @ManyToOne
-    @JoinColumn(name="artist_id", nullable = false)
+    @JoinColumn(name="singleEvent_id", nullable = false)
     private SingleEvent singleEvent;
 
     public PhysicalAsset(String type, String format, String description, String itemNumber, String notes, String location, SingleEvent singleEvent) {
@@ -64,6 +62,14 @@ public class PhysicalAsset {
         this.artists = new ArrayList<Artist>();
         this.singleEvent = singleEvent;
 
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public String getType() {

@@ -43,6 +43,11 @@ public class Document {
     private SingleEvent singleEvent;
 
     @JsonIgnoreProperties("documents")
+    @ManyToOne
+    @JoinColumn(name = "physicalAsset_id", nullable = false)
+    private PhysicalAsset physicalAsset;
+
+    @JsonIgnoreProperties("documents")
     @ManyToMany
     @Cascade(org.hibernate.annotations.CascadeType.SAVE_UPDATE)
     @JoinTable(
@@ -151,6 +156,14 @@ public class Document {
 
     public void setSingleEvent(SingleEvent singleEvent) {
         this.singleEvent = singleEvent;
+    }
+
+    public PhysicalAsset getPhysicalAsset() {
+        return physicalAsset;
+    }
+
+    public void setPhysicalAsset(PhysicalAsset physicalAsset) {
+        this.physicalAsset = physicalAsset;
     }
 
     public List<Artist> getArtists() {

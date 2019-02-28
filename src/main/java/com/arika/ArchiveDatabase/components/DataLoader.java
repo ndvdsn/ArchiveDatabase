@@ -77,7 +77,7 @@ public class DataLoader implements ApplicationRunner {
         Document document1 = new Document("Audio", "INSTAL_04_Vajra.wav", "WAV", 44.13, 0.45, "Recorded by so and so from the booth", "Master", vajra_performance);
         documentRepository.save(document1);
 
-        PhysicalAsset vajraMinidisc = new PhysicalAsset("Audio", "Minidisc", "One of 10", "16", "Transcribed 2011", "Box 2");
+        PhysicalAsset vajraMinidisc = new PhysicalAsset("Audio", "Minidisc", "One of 10", "16", "Transcribed 2011", "Box 2", vajra_performance);
         physicalAssetRepository.save(vajraMinidisc);
 
         vajra.addArtist(artist1);

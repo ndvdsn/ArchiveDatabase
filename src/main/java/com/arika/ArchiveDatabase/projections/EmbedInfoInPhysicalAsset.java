@@ -16,5 +16,5 @@ public interface EmbedInfoInPhysicalAsset {
     String getItemNumber();
     String getNotes();
     String getLocation();
-    List<SingleEvent> getSingleEvents();
+    SingleEvent getSingleEvent();
 }
