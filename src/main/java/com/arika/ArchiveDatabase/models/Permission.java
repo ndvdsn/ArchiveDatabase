@@ -7,24 +7,41 @@ package com.arika.ArchiveDatabase.models;
 // it has the following properties
 //
 
+import javax.persistence.*;
+
+@Entity
+@Table(name = "permissions")
+
 public class Permission {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @Column(name="downloadable")
     private boolean downloadable;
 
+    @Column(name="streamable")
     private boolean streamable;
 
+    @Column(name="permissionGiven")
     private boolean permissionGiven;
 
+    @Column(name="rights")
     private String rights;
 
+    @Column(name="rightsHolder")
     private String rightsHolder;
 
+    @Column(name="permissionNotes")
     private String permissionNotes;
 
+    @Column(name="dateContacted")
     private String dateContacted;
 
+
+    @ManyToOne
+    @JoinColumn(name="artist_id", nullable=false)
     private Artist artist;
 
     public Permission(Long id, boolean downloadable, boolean streamable, boolean permissionGiven, String rights, String rightsHolder, String permissionNotes, String dateContacted, Artist artist) {

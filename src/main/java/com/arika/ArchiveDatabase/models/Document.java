@@ -53,7 +53,6 @@ public class Document {
     private List<Artist> artists;
 
 
-
     @JsonIgnoreProperties("documents")
     @ManyToMany
     @Cascade(org.hibernate.annotations.CascadeType.SAVE_UPDATE)
@@ -61,8 +60,6 @@ public class Document {
             joinColumns = {@JoinColumn(name = "document_id", nullable = false, updatable = false)},
             inverseJoinColumns = {@JoinColumn(name = "permission_id", nullable = false, updatable = false)}
     )
-
-
 
     private List<Permission> permissions;
 
