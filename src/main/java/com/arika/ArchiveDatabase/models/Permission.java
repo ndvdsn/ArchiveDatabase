@@ -44,8 +44,7 @@ public class Permission {
     @JoinColumn(name="artist_id", nullable=false)
     private Artist artist;
 
-    public Permission(Long id, boolean downloadable, boolean streamable, boolean permissionGiven, String rights, String rightsHolder, String permissionNotes, String dateContacted, Artist artist) {
-        this.id = id;
+    public Permission(boolean downloadable, boolean streamable, boolean permissionGiven, String rights, String rightsHolder, String permissionNotes, String dateContacted, Artist artist) {
         this.downloadable = downloadable;
         this.streamable = streamable;
         this.permissionGiven = permissionGiven;
@@ -53,6 +52,7 @@ public class Permission {
         this.rightsHolder = rightsHolder;
         this.permissionNotes = permissionNotes;
         this.dateContacted = dateContacted;
+        this.artist = artist;
     }
 
     public Permission(){

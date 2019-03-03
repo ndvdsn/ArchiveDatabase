@@ -42,6 +42,7 @@ public class Artist {
         this.name = name;
         this.country = country;
         this.groups = new ArrayList<Group>();
+        this.singleEvents = new ArrayList<SingleEvent>();
     }
 
     public Artist(){

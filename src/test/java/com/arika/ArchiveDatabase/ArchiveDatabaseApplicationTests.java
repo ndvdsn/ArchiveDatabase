@@ -1,6 +1,7 @@
 package com.arika.ArchiveDatabase;
 
 import com.arika.ArchiveDatabase.models.*;
+import com.arika.ArchiveDatabase.repositories.Permission.PermissionRepository;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -37,6 +38,9 @@ public class ArchiveDatabaseApplicationTests {
 	@Autowired
 	SingleEventRepository singleEventRepository;
 
+	@Autowired
+	PermissionRepository permissionRepository;
+
 
 	Artist artist;
 	Group group;
@@ -44,6 +48,7 @@ public class ArchiveDatabaseApplicationTests {
 	MultiEvent multiEvent;
 	SingleEvent singleEvent;
 	PhysicalAsset physicalAsset;
+	Permission permission;
 	Date date;
 
 	@Test
@@ -68,8 +73,16 @@ public class ArchiveDatabaseApplicationTests {
 		SingleEvent danceThing = new SingleEvent("Dance Thing", date, "Glasgow", "Tramway", episode9);
 		singleEventRepository.save(danceThing);
 
+	}
 
+	@Test
+	public void addPermissions(){
 
+		Artist fritz = new Artist ("Fritz Welch", "USA");
+		artistRepository.save(fritz);
+
+		Permission permission1 = new Permission(true, true, true, "Copyright", "Arika", "something something", "23/6/14", fritz);
+		permissionRepository.save(permission1);
 	}
 
 

@@ -37,18 +37,18 @@ public class Document {
     @Column(name = "hierarchy")
     private String hierarchy;
 
-    @JsonIgnoreProperties("singleEvents")
+//    @JsonIgnoreProperties("singleEvents")
     @ManyToOne
     @JoinColumn(name = "singleEvent_id", nullable = false)
     private SingleEvent singleEvent;
 
-    @JsonIgnoreProperties("documents")
+//    @JsonIgnoreProperties("documents")
     @ManyToOne
     @JoinColumn(name = "physicalAsset_id", nullable = true)
     private PhysicalAsset physicalAsset;
 
 
-    @JsonIgnoreProperties("documents")
+//    @JsonIgnoreProperties("documents")
     @ManyToMany
     @Cascade(org.hibernate.annotations.CascadeType.SAVE_UPDATE)
     @JoinTable(
@@ -59,7 +59,7 @@ public class Document {
     private List<Artist> artists;
 
 
-    @JsonIgnoreProperties("documents")
+//    @JsonIgnoreProperties("documents")
     @ManyToMany
     @Cascade(org.hibernate.annotations.CascadeType.SAVE_UPDATE)
     @JoinTable(

@@ -12,6 +12,6 @@ public interface EmbedInfoInArtist {
     Long getId();
     String getName();
     String getCountry();
-    Group getGroup();
+    List<Group> getGroup();
     List<SingleEvent> getSingleEvents();
 }

@@ -13,6 +13,7 @@ import com.arika.ArchiveDatabase.repositories.MultiEvent.MultiEventRepository;
 import com.arika.ArchiveDatabase.repositories.SingleEvent.SingleEventRepository;
 
 
+import java.text.DateFormat;
 import java.text.ParseException;
 
 import java.text.SimpleDateFormat;
@@ -47,7 +48,7 @@ public class DataLoader implements ApplicationRunner {
 
 
 
-        SimpleDateFormat sfd = new SimpleDateFormat();
+        DateFormat sfd = new SimpleDateFormat("EEE, d MMM yyyy HH:mm:ss Z");
         String singleEventDate = "Thu, 17 Oct 2004 22:00:00 +0100";
         Date date01 = null;
         try {
