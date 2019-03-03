@@ -85,6 +85,38 @@ public class ArchiveDatabaseApplicationTests {
 		permissionRepository.save(permission1);
 	}
 
+	@Test
+	public void addDocument(){
+
+		MultiEvent instal10 = new MultiEvent("Instal 10", 2010);
+		multiEventRepository.save(instal10);
+
+		SingleEvent fritz10 = new SingleEvent("Fritz Welch", date, "Glasgow", "Tramway", instal10);
+		singleEventRepository.save(fritz10);
+
+		Document document1 = new Document("Audio", "Instal_10_Fritz_Welch.wav", "WAV", 230.66, 65.33, "from source", "Master", fritz10);
+		documentRepository.save(document1);
+	}
+
+	@Test
+	public void addPhysicalAsset(){
+
+		Artist fritz = new Artist ("Fritz Welch", "USA");
+		artistRepository.save(fritz);
+
+		MultiEvent instal10 = new MultiEvent("Instal 10", 2010);
+		multiEventRepository.save(instal10);
+
+		SingleEvent fritz10 = new SingleEvent("Fritz Welch", date, "Glasgow", "Tramway", instal10);
+		singleEventRepository.save(fritz10);
+
+		Document document1 = new Document("Audio", "Instal_10_Fritz_Welch.wav", "WAV", 230.66, 65.33, "from source", "Master", fritz10);
+		documentRepository.save(document1);
+
+		PhysicalAsset physicalAsset1 = new PhysicalAsset("Video", "DV Tape", "Label says such and such", "34", "something", "Box 3", fritz10);
+		physicalAssetRepository.save(physicalAsset1);
+
+	}
 
 
 }

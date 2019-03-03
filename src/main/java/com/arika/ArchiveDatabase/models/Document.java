@@ -74,7 +74,7 @@ public class Document {
 
 
     public Document(String type, String fileName, String format, Double fileSize, Double duration, String documentNotes, String hierarchy, SingleEvent singleEvent) {
-        this.id = id;
+//        this.id = id;
         this.type = type;
         this.fileName = fileName;
         this.format = format;
