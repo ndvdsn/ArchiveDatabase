@@ -23,7 +23,7 @@ public class MultiEvent {
     private int year;
 
 
-    public MultiEvent(String name, int year){
+    public MultiEvent(String multiEventName, int year){
         this.multiEventName = multiEventName;
         this.year = year;
     }
