@@ -26,6 +26,7 @@ public class Artist {
     @ManyToMany
     @Cascade(org.hibernate.annotations.CascadeType.SAVE_UPDATE)
     @JoinTable(
+            name = "groups_artists",
             joinColumns = {@JoinColumn(name = "artist_id", nullable = false, updatable = false)},
             inverseJoinColumns = {@JoinColumn(name = "group_id", nullable = false, updatable = false)}
     )
@@ -35,7 +36,11 @@ public class Artist {
     @JsonIgnoreProperties("artists")
     @ManyToMany
     @Cascade(org.hibernate.annotations.CascadeType.SAVE_UPDATE)
-    @JoinTable(joinColumns = {@JoinColumn(name = "artist_id", nullable = false, updatable = false)}, inverseJoinColumns = {@JoinColumn(name = "singleEvent_id", nullable = false, updatable = false)})
+    @JoinTable(
+            name = "singleEvents_artists",
+            joinColumns = {@JoinColumn(name = "artist_id", nullable = false, updatable = false)},
+            inverseJoinColumns = {@JoinColumn(name = "singleEvent_id", nullable = false, updatable = false)}
+            )
     private List<SingleEvent> singleEvents;
 
     public Artist(String name, String country){

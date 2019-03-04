@@ -22,16 +22,10 @@ public class MultiEvent {
     @Column(name = "year")
     private int year;
 
-    @JsonIgnoreProperties("raids")
-    @Cascade(org.hibernate.annotations.CascadeType.DELETE)
-    @OneToMany(mappedBy = "multiEvent", fetch = FetchType.LAZY)
-    private List<SingleEvent> events;
-
 
     public MultiEvent(String name, int year){
         this.multiEventName = multiEventName;
         this.year = year;
-        this.events = new ArrayList<SingleEvent>();
     }
 
     public MultiEvent(){
@@ -62,11 +56,5 @@ public class MultiEvent {
         this.year = year;
     }
 
-    public List<SingleEvent> getEvents() {
-        return events;
-    }
 
-    public void setEvents(List<SingleEvent> events) {
-        this.events = events;
-    }
 }

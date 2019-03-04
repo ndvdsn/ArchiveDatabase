@@ -3,6 +3,7 @@ package com.arika.ArchiveDatabase.projections;
 import com.arika.ArchiveDatabase.models.Artist;
 import com.arika.ArchiveDatabase.models.Document;
 import com.arika.ArchiveDatabase.models.Permission;
+import com.arika.ArchiveDatabase.models.SingleEvent;
 import org.springframework.data.rest.core.config.Projection;
 
 import java.util.List;
@@ -17,7 +18,7 @@ public interface EmbedInfoInDocument {
     Double getDuration();
     String getDocumentNotes();
     String getHierarchy();
-    String getSingleEventName();
+    SingleEvent getSingleEvent();
     List<Artist> getArtists();
     List<Permission> getPermissions();
 }

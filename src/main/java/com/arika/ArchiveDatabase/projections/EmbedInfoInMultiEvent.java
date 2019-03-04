@@ -11,5 +11,5 @@ public interface EmbedInfoInMultiEvent {
     Long getId();
     String getMultiEventName();
     int getYear();
-    List<SingleEvent> getSingleEvents();
+
 }
