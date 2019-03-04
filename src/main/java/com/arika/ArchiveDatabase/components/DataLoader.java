@@ -72,6 +72,23 @@ public class DataLoader implements ApplicationRunner {
         MultiEvent instal04 = new MultiEvent("Instal 04", 2004);
         multiEventRepository.save(instal04);
 
+        MultiEvent episode07 = new MultiEvent("Episode 07: We Can't Live Without Our Lives", 2015);
+        multiEventRepository.save(episode07);
+
+        MultiEvent episode08 = new MultiEvent("Episode 08: Refuse Powers' Grasp", 2016);
+        multiEventRepository.save(episode08);
+
+        MultiEvent episode09 = new MultiEvent("Episode 09: Other Worlds Already Exist", 2017);
+        multiEventRepository.save(episode09);
+
+
+
+        Artist artistSgaireWood = new Artist("Sgaire Wood", "UK");
+        artistRepository.save(artistSgaireWood);
+
+        SingleEvent seSgaireWood = new SingleEvent("Sgaire Wood", date01, "Glasgow", "Tramway", episode09);
+        singleEventRepository.save(seSgaireWood);
+
         SingleEvent vajra_performance = new SingleEvent("Vajra", date01, "Glasgow", "The Arches", instal04);
         singleEventRepository.save(vajra_performance);
 
@@ -81,14 +98,14 @@ public class DataLoader implements ApplicationRunner {
         PhysicalAsset vajraMinidisc = new PhysicalAsset("Audio", "Minidisc", "One of 10", "16", "Transcribed 2011", "Box 2", vajra_performance);
         physicalAssetRepository.save(vajraMinidisc);
 
-        vajra.addArtist(artist1);
-        groupRepository.save(vajra);
-
-        vajra.addArtist(artist2);
-        groupRepository.save(vajra);
-
-        vajra.addArtist(artist3);
-        groupRepository.save(vajra);
+//        vajra.addArtist(artist1);
+//        groupRepository.save(vajra);
+//
+//        vajra.addArtist(artist2);
+//        groupRepository.save(vajra);
+//
+//        vajra.addArtist(artist3);
+//        groupRepository.save(vajra);
 
         vajra_performance.addArtist(artist1);
         singleEventRepository.save(vajra_performance);
