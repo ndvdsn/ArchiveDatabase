@@ -3,19 +3,25 @@ import Artist from "./Artist"
 
 const ArtistList = (props) => {
 
-  const artists = props.artistsArray.map((artist) => {
+    if (props.artists == null || props.artists.length ===0){
+      return<p>Loading...</p>
+    }
+
+    const artists = props.artists.map((artist)=>{
+      return(
+        <li key = {artist.id} className = "artist-item">
+        <Artist artist = {artist}/>
+        </li>
+      )
+    })
+
     return (
-
-      <li key = {artist.id} className = "artist-item">
-      <Artist artist = {artist}/>
-      </li>
+      <div>
+      <ul>
+      {artists}
+      </ul>
+      </div>
     )
-  })
+  };
 
-  return(
-    <ul>
-    {artists}
-    </ul>
-  )
-}
 export default ArtistList

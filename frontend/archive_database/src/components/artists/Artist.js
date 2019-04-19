@@ -4,6 +4,7 @@ const Artist = (props) => {
 
   return(
     <div className = "single-artist">
+
       <p>Name: {props.artist.name}</p>
       <p>Country: {props.artist.country}</p>
       // <p>Groups: {props.artist.groups}</p>
