@@ -1,7 +1,7 @@
 import React from "react";
 import Request from "../../helpers/request";
 import ArtistList from "../../components/artists/ArtistList";
-import Artist from "../../components/artists/Artist";
+
 
 class ArtistContainer extends React.Component{
   constructor(props){

@@ -98,14 +98,14 @@ public class DataLoader implements ApplicationRunner {
         PhysicalAsset vajraMinidisc = new PhysicalAsset("Audio", "Minidisc", "One of 10", "16", "Transcribed 2011", "Box 2", vajra_performance);
         physicalAssetRepository.save(vajraMinidisc);
 
-//        vajra.addArtist(artist1);
-//        groupRepository.save(vajra);
-//
-//        vajra.addArtist(artist2);
-//        groupRepository.save(vajra);
-//
-//        vajra.addArtist(artist3);
-//        groupRepository.save(vajra);
+        vajra.addArtist(artist1);
+        groupRepository.save(vajra);
+
+        vajra.addArtist(artist2);
+        groupRepository.save(vajra);
+
+        vajra.addArtist(artist3);
+        groupRepository.save(vajra);
 
         vajra_performance.addArtist(artist1);
         singleEventRepository.save(vajra_performance);
@@ -115,6 +115,18 @@ public class DataLoader implements ApplicationRunner {
 
         vajra_performance.addArtist(artist3);
         singleEventRepository.save(vajra_performance);
+
+        artist1.addSingleEvent(vajra_performance);
+        artist2.addSingleEvent(vajra_performance);
+        artist3.addSingleEvent(vajra_performance);
+        artist1.addGroup(vajra);
+        artist2.addGroup(vajra);
+        artist3.addGroup(vajra);
+        artistRepository.save(artist1);
+        artistRepository.save(artist2);
+        artistRepository.save(artist3);
+
+
 
 
 //        jack.addRaid(raid1);

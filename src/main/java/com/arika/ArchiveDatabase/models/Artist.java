@@ -86,6 +86,8 @@ public class Artist {
         this.groups = groups;
     }
 
+    public void addGroup(Group group){ this.groups.add(group);}
+
     public List<SingleEvent> getSingleEvents() {
         return singleEvents;
     }
