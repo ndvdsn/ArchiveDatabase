@@ -12,7 +12,7 @@ class ArtistContainer extends React.Component{
   }
   componentDidMount(){
     const request = new Request();
-    request.get('api/artists')
+    request.get('/api/artists')
     .then(data => {
       this.setState({artists:data._embedded.artists})
     })

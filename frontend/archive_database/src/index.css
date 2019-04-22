@@ -1,4 +1,4 @@
-body {
+/* body {
   margin: 0;
   padding: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -11,4 +11,85 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+} */
+
+body {
+  font-family: 'Avenir', sans-serif;
+  color: #252626;
+  justify-content: center;
+  padding-top: 20px;
+  padding-left: 300px;
+  padding-right: 300px;
+  padding-bottom: 20px;
+}
+
+
+
+
+h1 {
+
+  border: 1px solid #252626;
+  text-align: center;
+  margin: 6px;
+  padding: 6px;
+}
+
+h3 {
+  border: 1px solid #252626;
+  margin: 6px;
+  padding: 6px;
+
+}
+
+h4 {
+  border: 1px solid #252626;
+  font-size: 15px;
+  margin: 6px;
+  padding: 6px;
+  background-color: #e8eade;
+
+}
+
+select {
+margin: 0 auto 20px auto;
+display: block;
+font-size: 18px;
+padding: 6px;
+}
+
+img {
+  display: inline-block;
+  border: 1px solid #252626;
+  margin: 6px;
+  padding: 6px;
+}
+
+audio {
+  display: inline-block;
+  border: 1px solid #252626;
+  height: 60px;
+  margin: 6px;
+  padding: 6px;
+
+}
+.details {
+
+  border: 1px solid #252626;
+  margin: 6px;
+  padding: 6px;
+  /* background-color: beige; */
+}
+
+.selector {
+  /* justify-content: center; */
+  margin: 0 auto 20px auto;
+  display: block;
+  font-size: 20px;
+}
+
+.song {
+  /* border: 1px solid #252626; */
+  margin: 6px;
+  padding: 6px;
+
 }

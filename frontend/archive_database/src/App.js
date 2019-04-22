@@ -1,13 +1,21 @@
 import React, { Component } from 'react';
 // import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import ArtistContainer from './containers/artists/ArtistContainer';
+import MultiEventContainer from './containers/multiEvents/MultiEventContainer';
 
 import './App.css';
 
 class App extends Component {
   render() {
     return (
+      <div>
+      <div>
       <ArtistContainer/>
+      </div>
+      <div>
+      <MultiEventContainer/>
+      </div>
+      </div>
     //   <div>
     //   <Router>
     //   <React.Fragment>
