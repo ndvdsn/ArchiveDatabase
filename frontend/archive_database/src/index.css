@@ -73,11 +73,17 @@ audio {
 
 }
 .details {
-
+  display: flex;
+  justify-content: space-around;
   border: 1px solid #252626;
   margin: 6px;
   padding: 6px;
   /* background-color: beige; */
+}
+
+li {
+  display: flex;
+  justify-content: flex-start;
 }
 
 .selector {
@@ -87,9 +93,12 @@ audio {
   font-size: 20px;
 }
 
-.song {
+.artist {
   /* border: 1px solid #252626; */
   margin: 6px;
   padding: 6px;
 
+}
+li {
+  display: flex-grid;
 }

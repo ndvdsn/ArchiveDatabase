@@ -1,6 +1,7 @@
 import React from "react";
 import moment from "moment";
 
+
 const Artist = (props) => {
 
   if(!props.artist){
@@ -14,28 +15,38 @@ const Artist = (props) => {
   const slicedDate = dateBasic.slice(0,10)
 
   const formattedDate = moment(slicedDate).format("dddd Do MMM YYYY");
-
-  let time = dateBasic.slice(11,16)
+  const time = moment(slicedDate).format('hh:mm z','Europe/London');
 
   const id = props.artist.id
 
   const groups = props.artist.groups.map((group, index)=>{
-    return <p key={index}>{group.name}</p>
+    return <ul key={index}>{group.name}</ul>
   })
 
   const singleEvents = props.artist.singleEvents.map((singleEvent, index) => {
-    return <p key={index}>{singleEvent.title}</p>
+    return <ul key={index}>{singleEvent.title}</ul>
+
+  })
+
+  const location = props.artist.singleEvents.map((singleEvent, index) => {
+    return <ul key={index}>{singleEvent.location}</ul>
+  })
+
+  const venue = props.artist.singleEvents.map((singleEvent, index) => {
+    return <ul key={index}>{singleEvent.venue}</ul>
   })
 
   return(
     <div className = "single-artist">
-
-      <a href={'/artists/'+id}>{props.artist.name}</a>
-      <p>Name: {props.artist.name}</p>
-      <p>Country: {props.artist.country}</p>
-      <ul>Groups: {groups}</ul>
-      <ul>SingleEvents: {singleEvents} {formattedDate} {time} </ul>
-
+      <div className="details">
+      <ul>
+      <li><a href={'/artists/'+id}>{props.artist.name}</a></li>
+      <li>Name: {props.artist.name}</li>
+      <li>Country: {props.artist.country}</li>
+      <li>Groups: {groups}</li>
+      <li>SingleEvents: {singleEvents} {formattedDate} {time} {location} {venue}</li>
+      </ul>
+      </div>
     </div>
   )
 }
