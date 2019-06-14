@@ -70,7 +70,7 @@ public class ArchiveDatabaseApplicationTests {
 		MultiEvent episode9 = new MultiEvent("Episode 9", 2014);
 		multiEventRepository.save(episode9);
 
-		SingleEvent danceThing = new SingleEvent("Dance Thing", date, "Glasgow", "Tramway", episode9);
+		SingleEvent danceThing = new SingleEvent("Dance Thing", "17 Nov 2017", "19:00", "Glasgow", "Tramway", episode9);
 		singleEventRepository.save(danceThing);
 
 	}
@@ -91,7 +91,7 @@ public class ArchiveDatabaseApplicationTests {
 		MultiEvent instal10 = new MultiEvent("Instal 10", 2010);
 		multiEventRepository.save(instal10);
 
-		SingleEvent fritz10 = new SingleEvent("Fritz Welch", date, "Glasgow", "Tramway", instal10);
+		SingleEvent fritz10 = new SingleEvent("Fritz Welch", "15 Oct 2010", "19:00", "Glasgow", "Tramway", instal10);
 		singleEventRepository.save(fritz10);
 
 		Document document1 = new Document("Audio", "Instal_10_Fritz_Welch.wav", "WAV", 230.66, 65.33, "from source", "Master", fritz10);
@@ -107,7 +107,7 @@ public class ArchiveDatabaseApplicationTests {
 		MultiEvent instal10 = new MultiEvent("Instal 10", 2010);
 		multiEventRepository.save(instal10);
 
-		SingleEvent fritz10 = new SingleEvent("Fritz Welch", date, "Glasgow", "Tramway", instal10);
+		SingleEvent fritz10 = new SingleEvent("Fritz Welch", "23 July 2010", "18:00", "Glasgow", "Tramway", instal10);
 		singleEventRepository.save(fritz10);
 
 		Document document1 = new Document("Audio", "Instal_10_Fritz_Welch.wav", "WAV", 230.66, 65.33, "from source", "Master", fritz10);

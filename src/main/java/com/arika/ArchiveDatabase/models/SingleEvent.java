@@ -5,7 +5,6 @@ import org.hibernate.annotations.Cascade;
 
 import javax.persistence.*;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 
 @Entity
@@ -21,7 +20,10 @@ public class SingleEvent {
     private String title;
 
     @Column(name = "date")
-    private Date date;
+    private String date;
+
+    @Column(name = "time")
+    private String time;
 
     @Column(name = "location")
     private String location;
@@ -44,10 +46,11 @@ public class SingleEvent {
     private MultiEvent multiEvent;
 
 
-    public SingleEvent(String title, Date date, String location, String venue, MultiEvent multiEvent){
+    public SingleEvent(String title, String date, String time, String location, String venue, MultiEvent multiEvent){
 
         this.title = title;
         this.date = date;
+        this.time = time;
         this.location = location;
         this.venue = venue;
         this.artists = new ArrayList<Artist>();
@@ -77,13 +80,17 @@ public class SingleEvent {
         this.title = title;
     }
 
-    public Date getDate() {
+    public String getDate() {
         return date;
     }
 
-    public void setDate(Date date) {
+    public void setDate(String date) {
         this.date = date;
     }
+
+    public String getTime() { return time;}
+
+    public void setTime(String time) { this.time = time; }
 
     public String getLocation() {
         return location;

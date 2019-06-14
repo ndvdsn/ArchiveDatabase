@@ -48,15 +48,6 @@ public class DataLoader implements ApplicationRunner {
 
 
 
-        DateFormat sfd = new SimpleDateFormat("EEE, d MMM yyyy HH:mm:ss Z");
-        String singleEventDate = "Thu, 17 Oct 2004 22:00:00 +0100";
-        Date date01 = null;
-        try {
-            date01 = sfd.parse(singleEventDate);
-        } catch (ParseException e) {
-            e.printStackTrace();
-        }
-
         Group vajra = new Group("Vajra");
         groupRepository.save(vajra);
 
@@ -82,14 +73,19 @@ public class DataLoader implements ApplicationRunner {
         multiEventRepository.save(episode09);
 
 
-
         Artist artistSgaireWood = new Artist("Sgaire Wood", "UK");
         artistRepository.save(artistSgaireWood);
 
-        SingleEvent seSgaireWood = new SingleEvent("Sgaire Wood", date01, "Glasgow", "Tramway", episode09);
+        Artist storyboardP = new Artist("Storyboard P", "USA");
+        artistRepository.save(storyboardP);
+
+        SingleEvent seSgaireWood = new SingleEvent("Sgaire Wood", "19 Nov 2017", "18:15", "Glasgow", "Tramway", episode09);
         singleEventRepository.save(seSgaireWood);
 
-        SingleEvent vajra_performance = new SingleEvent("Vajra", date01, "Glasgow", "The Arches", instal04);
+        SingleEvent seStoryboardP = new SingleEvent("Storyboard P", "Something November 2017", "19:00", "Glasgow", "Tramway", episode09);
+        singleEventRepository.save(seStoryboardP);
+
+        SingleEvent vajra_performance = new SingleEvent("Vajra", "17 Oct 2004", "22:00", "Glasgow", "The Arches", instal04);
         singleEventRepository.save(vajra_performance);
 
         Document document1 = new Document("Audio", "INSTAL_04_Vajra.wav", "WAV", 44.13, 0.45, "Recorded by so and so from the booth", "Master", vajra_performance);
@@ -116,6 +112,14 @@ public class DataLoader implements ApplicationRunner {
         vajra_performance.addArtist(artist3);
         singleEventRepository.save(vajra_performance);
 
+        seSgaireWood.addArtist(artistSgaireWood);
+        singleEventRepository.save(seSgaireWood);
+
+        seStoryboardP.addArtist(storyboardP);
+        singleEventRepository.save(seStoryboardP);
+
+
+
         artist1.addSingleEvent(vajra_performance);
         artist2.addSingleEvent(vajra_performance);
         artist3.addSingleEvent(vajra_performance);
@@ -125,19 +129,10 @@ public class DataLoader implements ApplicationRunner {
         artistRepository.save(artist1);
         artistRepository.save(artist2);
         artistRepository.save(artist3);
-
-
-
-
-//        jack.addRaid(raid1);
-//        jack.addRaid(raid2);
-//        pirateRepository.save(jack);
-//
-//        raid2.addPirate(john);
-//        raidRepository.save(raid2);
-
-
-
+        artistSgaireWood.addSingleEvent(seSgaireWood);
+        artistRepository.save(artistSgaireWood);
+        storyboardP.addSingleEvent(seStoryboardP);
+        artistRepository.save(storyboardP);
 
 
     }
