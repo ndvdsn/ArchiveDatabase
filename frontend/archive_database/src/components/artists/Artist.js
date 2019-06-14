@@ -12,10 +12,14 @@ const Artist = (props) => {
   const dateBasic = props.artist.singleEvents.map((singleEvent)=>{
     return singleEvent.date
   })
-  const slicedDate = dateBasic.slice(0,10)
 
-  const formattedDate = moment(slicedDate).format("dddd Do MMM YYYY");
-  const time = moment(slicedDate).format('hh:mm z','Europe/London');
+  const time = props.artist.singleEvents.map((singleEvent)=>{
+    return singleEvent.time
+  })
+  // const slicedDate = dateBasic.slice(0,10)
+  //
+  // const formattedDate = moment(slicedDate).format("dddd Do MMM YYYY");
+  // const time = moment(slicedDate).format('hh:mm z','Europe/London');
 
   const id = props.artist.id
 
@@ -23,7 +27,7 @@ const Artist = (props) => {
     return <ul key={index}>{group.name}</ul>
   })
 
-  const singleEvents = props.artist.singleEvents.map((singleEvent, index) => {
+  const singleEvent = props.artist.singleEvents.map((singleEvent, index) => {
     return <ul key={index}>{singleEvent.title}</ul>
 
   })
@@ -44,7 +48,7 @@ const Artist = (props) => {
       <li>Name: {props.artist.name}</li>
       <li>Country: {props.artist.country}</li>
       <li>Groups: {groups}</li>
-      <li>SingleEvents: {singleEvents} {formattedDate} {time} {location} {venue}</li>
+      <li>Single Event Title: {singleEvent}  Date: {dateBasic} Time: {time} Location: {location} Venue: {venue}</li>
       </ul>
       </div>
     </div>
