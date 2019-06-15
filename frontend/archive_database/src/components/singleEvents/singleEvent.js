@@ -12,16 +12,18 @@ const SingleEvent = (props) => {
 
   return(
     <div className = "single-singleEvent">
-    <ul>
-    <li>Title: {props.singleEvent.title} </li>
-    <li>Date: {props.singleEvent.date} </li>
-    <li>Location: {props.singleEvent.location} </li>
-    <li>Venue: {props.singleEvent.venue} </li>
-    <li>Artist: {artists} </li>
-    <li>MultiEvent: {props.singleEvent.multiEventName} </li>
-    </ul>
+      <div className = "details">
+        <ul>
+          <li>Title: {props.singleEvent.title} </li>
+          <li>Date: {props.singleEvent.date} </li>
+          <li>Location: {props.singleEvent.location} </li>
+          <li>Venue: {props.singleEvent.venue} </li>
+          <li>Artist: {artists} </li>
+          <li>MultiEvent: {props.singleEvent.multiEventName} </li>
+        </ul>
+      </div>
     </div>
-    
+
   )
 }
 

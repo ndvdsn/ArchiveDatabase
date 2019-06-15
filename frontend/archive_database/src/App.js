@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import ArtistContainer from './containers/artists/ArtistContainer';
 import MultiEventContainer from './containers/multiEvents/MultiEventContainer';
 import SingleEventContainer from './containers/singleEvents/singleEventsContainer';
-import DocumentContainer from './containers/documents/DocumentContainer';
+import DigitalAssetContainer from './containers/digitalAssets/DigitalAssetContainer';
 
 import './App.css';
 
@@ -21,7 +21,7 @@ class App extends Component {
         <SingleEventContainer/>
         </div>
         <div>
-        <DocumentContainer/>
+        <DigitalAssetContainer/>
         </div>
       </div>
     //   <div>
