@@ -16,12 +16,14 @@ class DocumentContainer extends React.Component{
       this.setState({documents:data._embedded.documents})
     })
   }
+  
   render(){
+    console.log(this.state.documents);
     return (
       <>
       <h1> Documents </h1>
       <div className = "documents-container">
-      <DocumentList documentlist={this.state.documents}/>
+      <DocumentList documents={this.state.documents}/>
       </div>
       </>
     )

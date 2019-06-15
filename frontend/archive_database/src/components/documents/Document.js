@@ -2,7 +2,7 @@ import React from "react";
 
 const Document = (props) => {
 
-  if(!props.document_){
+  if(!props.document){
     return null;
   }
 

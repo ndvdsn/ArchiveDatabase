@@ -21,6 +21,7 @@ const SingleEvent = (props) => {
     <li>MultiEvent: {props.singleEvent.multiEventName} </li>
     </ul>
     </div>
+    
   )
 }
 

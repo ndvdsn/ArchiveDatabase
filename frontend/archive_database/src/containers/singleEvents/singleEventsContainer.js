@@ -13,17 +13,17 @@ class SingleEventContainer extends React.Component{
     const request = new Request();
     request.get('api/singleEvents')
     .then(data => {
-      this.setState({multiEvents:data._embedded.singleEvents})
+      this.setState({singleEvents:data._embedded.singleEvents})
     })
   }
 
   render(){
-    console.log(this.state.multiEvents);
+    console.log(this.state.singleEvents);
     return(
       <>
       <h1>Single Events</h1>
       <div className = "singleEvents-container">
-      <SingleEventList singleEvents={this.state.multiEvents} />
+      <SingleEventList singleEvents={this.state.singleEvents} />
       </div>
       </>
 

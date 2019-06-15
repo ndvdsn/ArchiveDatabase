@@ -7,10 +7,10 @@ const DocumentList = (props) => {
     return <p> loading...</p>
   }
 
-  const documents = props.documents.map((document_)=>{
+  const documents = props.documents.map((document)=>{
     return(
-      <li key = {document_.id} className = "document-item">
-      <Document document_ = {document_}/>
+      <li key = {document.id} className = "document-item">
+      <Document document = {document}/>
       </li>
     )
   })
