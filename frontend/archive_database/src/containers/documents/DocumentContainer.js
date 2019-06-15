@@ -1,6 +1,6 @@
 import React from "react";
 import Request from "../../helpers/request";
-
+import DocumentList from "../../components/documents/DocumentList";
 
 class DocumentContainer extends React.Component{
   constructor(props){
@@ -12,7 +12,7 @@ class DocumentContainer extends React.Component{
   componentDidMount(){
     const request = new Request();
     request.get('api/documents')
-    then(data => {
+    .then(data => {
       this.setState({documents:data._embedded.documents})
     })
   }
