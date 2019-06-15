@@ -57,6 +57,18 @@ public class DataLoader implements ApplicationRunner {
             e.printStackTrace();
         }
 
+        MultiEvent instal04 = new MultiEvent("Instal 04", 2004);
+        multiEventRepository.save(instal04);
+
+        MultiEvent episode07 = new MultiEvent("Episode 07: We Can't Live Without Our Lives", 2015);
+        multiEventRepository.save(episode07);
+
+        MultiEvent episode08 = new MultiEvent("Episode 08: Refuse Powers' Grasp", 2016);
+        multiEventRepository.save(episode08);
+
+        MultiEvent episode09 = new MultiEvent("Episode 09: Other Worlds Already Exist", 2017);
+        multiEventRepository.save(episode09);
+
         Group vajra = new Group("Vajra");
         groupRepository.save(vajra);
 
@@ -69,17 +81,7 @@ public class DataLoader implements ApplicationRunner {
         Artist artist3 = new Artist("Toshiaki Ishizuka", "Japan");
         artistRepository.save(artist3);
 
-        MultiEvent instal04 = new MultiEvent("Instal 04", 2004);
-        multiEventRepository.save(instal04);
 
-        MultiEvent episode07 = new MultiEvent("Episode 07: We Can't Live Without Our Lives", 2015);
-        multiEventRepository.save(episode07);
-
-        MultiEvent episode08 = new MultiEvent("Episode 08: Refuse Powers' Grasp", 2016);
-        multiEventRepository.save(episode08);
-
-        MultiEvent episode09 = new MultiEvent("Episode 09: Other Worlds Already Exist", 2017);
-        multiEventRepository.save(episode09);
 
 
 
