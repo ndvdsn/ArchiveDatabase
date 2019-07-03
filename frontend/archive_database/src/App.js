@@ -4,6 +4,7 @@ import ArtistContainer from './containers/artists/ArtistContainer';
 import MultiEventContainer from './containers/multiEvents/MultiEventContainer';
 import SingleEventContainer from './containers/singleEvents/singleEventsContainer';
 import DigitalAssetContainer from './containers/digitalAssets/DigitalAssetContainer';
+import PermissionContainer from './containers/permissions/PermissionContainer';
 
 import './App.css';
 
@@ -22,6 +23,9 @@ class App extends Component {
         </div>
         <div>
         <DigitalAssetContainer/>
+        </div>
+        <div>
+        <PermissionContainer/>
         </div>
       </div>
     //   <div>
