@@ -45,6 +45,7 @@ public class Permission {
     private Artist artist;
 
     public Permission(boolean downloadable, boolean streamable, boolean permissionGiven, String rights, String rightsHolder, String permissionNotes, String dateContacted, Artist artist) {
+        this.id = id;
         this.downloadable = downloadable;
         this.streamable = streamable;
         this.permissionGiven = permissionGiven;
@@ -130,5 +131,7 @@ public class Permission {
     public void setArtist(Artist artist) {
         this.artist = artist;
     }
+
+
 }
 

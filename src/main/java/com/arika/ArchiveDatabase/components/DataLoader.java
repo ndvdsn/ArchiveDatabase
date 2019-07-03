@@ -1,6 +1,7 @@
 package com.arika.ArchiveDatabase.components;
 
 import com.arika.ArchiveDatabase.models.*;
+import com.arika.ArchiveDatabase.repositories.Permission.PermissionRepository;
 import com.arika.ArchiveDatabase.repositories.PhysicalAsset.PhysicalAssetRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.ApplicationArguments;
@@ -40,6 +41,9 @@ public class DataLoader implements ApplicationRunner {
 
     @Autowired
     SingleEventRepository singleEventRepository;
+
+    @Autowired
+    PermissionRepository permissionRepository;
 
     public DataLoader() {
     }
@@ -81,9 +85,17 @@ public class DataLoader implements ApplicationRunner {
         Artist artist3 = new Artist("Toshiaki Ishizuka", "Japan");
         artistRepository.save(artist3);
 
+        Permission permission1 = new Permission(true, true, true, "CC BY-NC-ND 4:0", "Arika", "Test string", "12/6/10", artist1);
+        permissionRepository.save(permission1);
 
+        permission1.setArtist(artist1);
+        permissionRepository.save(permission1);
 
+        Permission permission2 = new Permission(false, true, true, "Copyright", "Arika", "Test string 2", "3/4/11", artist2);
+        permissionRepository.save(permission2);
 
+        permission2.setArtist(artist2);
+        permissionRepository.save(permission2);
 
         Artist artistSgaireWood = new Artist("Sgaire Wood", "UK");
         artistRepository.save(artistSgaireWood);
