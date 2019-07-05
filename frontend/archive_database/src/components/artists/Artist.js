@@ -44,36 +44,36 @@ const Artist = (props) => {
     <div className = "single-artist">
       <div className="details">
       <ul>
-      <li><a href={'/artists/'+id}>{props.artist.name}</a></li>
-      <li>Name: {props.artist.name}</li>
-      <li>Country: {props.artist.country}</li>
-      <li>Groups: {groups}</li>
-      <li>Single Event Title: {singleEvent}  Date: {dateBasic} Time: {time} Location: {location} Venue: {venue}</li>
+        <div>
+        <li><a href={'/artists/'+id}>{props.artist.name}</a></li>
+        </div>
+        <div>
+        <li>Name: {props.artist.name}</li>
+        </div>
+        <div>
+        <li>Country: {props.artist.country}</li>
+        </div>
+        <div>
+        <li>Groups: {groups}</li>
+        </div>
+        <div>
+        <li>Single Event Title: {singleEvent}</li>
+        </div>
+        <div>
+        <li>Date: {dateBasic}</li>
+        </div>
+        <div>
+        <li>Time: {time}</li>
+        </div>
+        <div>
+        <li>Location: {location}</li>
+        </div>
+        <div>
+        <li>Venue: {venue}</li>
+        </div>
       </ul>
       </div>
     </div>
   )
 }
 export default Artist;
-
-// <div className = "single-artist">
-// <Link to={'/artists/' +id} className="single-artist-link">
-// <div className="artist-inner">
-//   <p>Name: {props.artist.name}</p>
-//   <p>Country: {props.artist.country}</p>
-//   <p>Groups: {groups}</p>
-//   <p>SingleEvents: {singleEvents} {formattedDate} {time} </p>
-// </div>
-// </Link>
-// </div>
-
-
-// render(){
-//     const filmNodes = this.props.data.map(film =>{
-//       return (
-//         <Film
-//         key={film.id}>
-//         <a href={film.url}>{film.name}</a>
-//         </Film>
-//       )
-//     })

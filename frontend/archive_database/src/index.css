@@ -26,11 +26,14 @@ h3 {
 }
 
 h4 {
-  border: 1px solid #252626;
+
   font-size: 15px;
   margin: 6px;
   padding: 6px;
   background-color: #e8eade;
+
+}
+h5 {
 
 }
 
@@ -63,6 +66,10 @@ li {
   justify-content: flex-start;
 }
 
+p {
+  padding: 6px;
+}
+
 .selector {
   /* justify-content: center; */
   margin: 0 auto 20px auto;
@@ -78,8 +85,40 @@ li {
 .single-singleEvent {
   margin: 6px;
   padding: 6px;
+  background: blue;
 }
 
+.single-document{
+  background: green;
+}
+
+.single-permission {
+  background: teal;
+}
+
+.single-artist {
+  background: yellow;
+}
+
+.single-multiEvent {
+  background: magenta;
+}
+
+.single-group {
+  background: orange;
+}
+
+.single-physicalAsset {
+  background: pink;
+}
+
+.main-title {
+  font-weight: bold;
+  color: white;
+  background: red;
+  margin: 8px;
+  padding: 8px;
+}
 
 
 /* li {

@@ -6,14 +6,14 @@ const DigitalAsset = (props) => {
     return null;
   }
 
-  console.log(props.digitalAssets)
+  console.log(props.digitalAsset)
 
-  const artists = props.digitalAsset.artists.map((artist, index)=>{
+  const artist = props.digitalAsset.artists.map((artist, index)=>{
     return <ul key={index}>{artist.name}</ul>
   })
 
 
-  const permissions = props.digitalAsset.permissions.map((permission, index)=>{
+  const permission = props.digitalAsset.permissions.map((permission, index)=>{
     return <ul key={index}>{permission.permissionGiven}</ul>
   })
   // eventually we'll want the permission detail here to be a link to the permissions object
@@ -30,12 +30,13 @@ const DigitalAsset = (props) => {
           <li>Document Notes: {props.digitalAsset.documentNotes}</li>
           <li>Hierarchy: {props.digitalAsset.hierarchy}</li>
           <li>Single Event: {props.digitalAsset.singleEvent.title}</li>
-          <li>Artist: {artists}</li>
-          <li>Permissions: {permissions}</li>
+
+          <li>Permissions: ({artist}){permission} </li>
         </ul>
       </div>
     </div>
   )
+  // currently getting an array of permissions instead of specific ones.
 }
 
 export default DigitalAsset;

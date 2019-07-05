@@ -13,6 +13,9 @@ class App extends Component {
     return (
       <div>
         <div>
+        <h1 className = "main-title">Archive Database</h1>
+        </div>
+        <div>
         <ArtistContainer/>
         </div>
         <div>
