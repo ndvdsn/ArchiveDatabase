@@ -3,11 +3,15 @@ import DigitalAsset from "./DigitalAsset";
 
 const DigitalAssetList = (props) => {
 
+
+  console.log(props.digitalAssets);
+
   if (props.digitalAssets == null || props.digitalAssets.length ===0){
     return <p> loading...</p>
   }
 
-  const digitalAssets = props.digitalAssets.map((digitalAsset)=>{
+
+  const dAssets = props.digitalAssets.map((digitalAsset)=>{
     return(
       <li key = {digitalAsset.id} className = "digitalAsset-item">
       <DigitalAsset digitalAsset = {digitalAsset}/>
@@ -15,10 +19,12 @@ const DigitalAssetList = (props) => {
     )
   })
 
+  console.log(dAssets);
+
   return (
     <div>
     <ul>
-    {digitalAssets}
+    {dAssets}
     </ul>
     </div>
   )

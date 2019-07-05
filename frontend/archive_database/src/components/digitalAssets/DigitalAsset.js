@@ -6,6 +6,8 @@ const DigitalAsset = (props) => {
     return null;
   }
 
+  console.log(props.digitalAssets)
+
   const artists = props.digitalAsset.artists.map((artist, index)=>{
     return <ul key={index}>{artist.name}</ul>
   })
@@ -27,7 +29,7 @@ const DigitalAsset = (props) => {
           <li>Duration: {props.digitalAsset.duration}</li>
           <li>Document Notes: {props.digitalAsset.documentNotes}</li>
           <li>Hierarchy: {props.digitalAsset.hierarchy}</li>
-          <li>Single Event: {props.digitalAsset.singleEvent}</li>
+          <li>Single Event: {props.digitalAsset.singleEvent.title}</li>
           <li>Artist: {artists}</li>
           <li>Permissions: {permissions}</li>
         </ul>

@@ -6,24 +6,25 @@ class DigitalAssetContainer extends React.Component{
   constructor(props){
     super(props);
     this.state = {
-      digitalAssets:[]
+      documents:[]
     }
   }
   componentDidMount(){
     const request = new Request();
     request.get('api/documents')
     .then(data => {
-      this.setState({digitalAssets:data._embedded.digitalAssets})
+      this.setState({documents:data._embedded.documents})
+      console.log(this.state.documents);
     })
   }
 
   render(){
-    console.log(this.state.digitalAssets);
+    console.log(this.state.documents);
     return (
       <>
       <h1> Documents </h1>
       <div className = "digitalAssets-container">
-      <DigitalAssetList digitalAssets={this.state.digitalAssets}/>
+      <DigitalAssetList digitalAssets={this.state.documents}/>
       </div>
       </>
     )
