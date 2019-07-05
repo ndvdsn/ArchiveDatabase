@@ -7,6 +7,15 @@ package com.arika.ArchiveDatabase.models;
 // it has the following properties
 //
 
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Table;
+import javax.persistence.Column;
+import javax.persistence.ManyToOne;
+import javax.persistence.JoinColumn;
+import javax.persistence.GenerationType;
 import javax.persistence.*;
 
 @Entity
@@ -19,13 +28,13 @@ public class Permission {
     private Long id;
 
     @Column(name="downloadable")
-    private boolean downloadable;
+    private String downloadable;
 
     @Column(name="streamable")
-    private boolean streamable;
+    private String streamable;
 
     @Column(name="permissionGiven")
-    private boolean permissionGiven;
+    private String permissionGiven;
 
     @Column(name="rights")
     private String rights;
@@ -44,8 +53,8 @@ public class Permission {
     @JoinColumn(name="artist_id", nullable=false)
     private Artist artist;
 
-    public Permission(boolean downloadable, boolean streamable, boolean permissionGiven, String rights, String rightsHolder, String permissionNotes, String dateContacted, Artist artist) {
-        this.id = id;
+    public Permission(String downloadable, String streamable, String permissionGiven, String rights, String rightsHolder, String permissionNotes, String dateContacted, Artist artist) {
+
         this.downloadable = downloadable;
         this.streamable = streamable;
         this.permissionGiven = permissionGiven;
@@ -68,27 +77,27 @@ public class Permission {
         this.id = id;
     }
 
-    public boolean isDownloadable() {
+    public String getDownloadable() {
         return downloadable;
     }
 
-    public void setDownloadable(boolean downloadable) {
+    public void setDownloadable(String downloadable) {
         this.downloadable = downloadable;
     }
 
-    public boolean isStreamable() {
+    public String getStreamable() {
         return streamable;
     }
 
-    public void setStreamable(boolean streamable) {
+    public void setStreamable(String streamable) {
         this.streamable = streamable;
     }
 
-    public boolean isPermissionGiven() {
+    public String getPermissionGiven() {
         return permissionGiven;
     }
 
-    public void setPermissionGiven(boolean permissionGiven) {
+    public void setPermissionGiven(String permissionGiven) {
         this.permissionGiven = permissionGiven;
     }
 

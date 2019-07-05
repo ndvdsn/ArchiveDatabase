@@ -85,16 +85,16 @@ public class DataLoader implements ApplicationRunner {
         Artist artist3 = new Artist("Toshiaki Ishizuka", "Japan");
         artistRepository.save(artist3);
 
-        Permission permission1 = new Permission(true, true, true, "CC BY-NC-ND 4:0", "Arika", "Test string", "12/6/10", artist1);
+        Permission permission1 = new Permission("Yes", "Yes", "Yes", "CC BY-NC-ND 4:0", "Arika", "Test string", "12/6/10", artist2);
         permissionRepository.save(permission1);
 
-        permission1.setArtist(artist1);
+        permission1.setArtist(artist2);
         permissionRepository.save(permission1);
 
-        Permission permission2 = new Permission(false, true, true, "Copyright", "Arika", "Test string 2", "3/4/11", artist2);
+        Permission permission2 = new Permission("No", "Yes", "Yes", "Copyright", "Arika", "Test string 2", "3/4/11", artist1);
         permissionRepository.save(permission2);
 
-        permission2.setArtist(artist2);
+        permission2.setArtist(artist1);
         permissionRepository.save(permission2);
 
         Artist artistSgaireWood = new Artist("Sgaire Wood", "UK");
@@ -140,15 +140,6 @@ public class DataLoader implements ApplicationRunner {
         artistRepository.save(artist2);
         artistRepository.save(artist3);
 
-
-
-
-//        jack.addRaid(raid1);
-//        jack.addRaid(raid2);
-//        pirateRepository.save(jack);
-//
-//        raid2.addPirate(john);
-//        raidRepository.save(raid2);
 
 
 

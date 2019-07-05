@@ -16,6 +16,8 @@ import com.arika.ArchiveDatabase.repositories.SingleEvent.SingleEventRepository;
 
 import java.util.Date;
 
+import static org.junit.Assert.assertEquals;
+
 @RunWith(SpringRunner.class)
 @SpringBootTest
 public class ArchiveDatabaseApplicationTests {
@@ -81,9 +83,13 @@ public class ArchiveDatabaseApplicationTests {
 		Artist fritz = new Artist ("Fritz Welch", "USA");
 		artistRepository.save(fritz);
 
-		Permission permission1 = new Permission(true, true, true, "Copyright", "Arika", "something something", "23/6/14", fritz);
+		Permission permission1 = new Permission("Yes", "Yes", "Yes", "Copyright", "Arika", "something something", "23/6/14", fritz);
 		permissionRepository.save(permission1);
+
+
 	}
+
+
 
 	@Test
 	public void addDocument(){
@@ -117,6 +123,7 @@ public class ArchiveDatabaseApplicationTests {
 		physicalAssetRepository.save(physicalAsset1);
 
 	}
+
 
 
 	// create tests to save and delete each model

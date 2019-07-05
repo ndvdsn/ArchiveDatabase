@@ -7,19 +7,19 @@ import org.springframework.data.rest.core.config.Projection;
 import java.util.List;
 
 
-@Projection(name = "embedInfoInDocument", types = Permission.class)
+@Projection(name = "embedInfoInPermission", types = Permission.class)
 
 public interface EmbedInfoInPermission {
 
     Long getId();
-    boolean getDownloadable();
-    boolean getStreamable();
-    boolean getPermissionGiven();
+    String getDownloadable();
+    String getStreamable();
+    String getPermissionGiven();
     String getRights();
     String getRightsHolder();
-    String getPermissioNotes();
+    String getPermissionNotes();
     String getDateContacted();
-    List<Artist> getArtists();
+    Artist getArtist();
 
 
 }
