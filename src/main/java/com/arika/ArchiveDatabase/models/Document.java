@@ -179,6 +179,10 @@ public class Document {
         this.artists = artists;
     }
 
+    public void addArtists(Artist artist){
+        this.artists.add(artist);
+    }
+
     public List<Permission> getPermissions() {
         return permissions;
     }
@@ -186,4 +190,6 @@ public class Document {
     public void setPermissions(List<Permission> permissions) {
         this.permissions = permissions;
     }
+
+    public void addPermissions(Permission permission){ this.permissions.add(permission);}
 }
