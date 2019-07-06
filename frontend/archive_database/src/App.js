@@ -5,6 +5,7 @@ import MultiEventContainer from './containers/multiEvents/MultiEventContainer';
 import SingleEventContainer from './containers/singleEvents/singleEventsContainer';
 import DigitalAssetContainer from './containers/digitalAssets/DigitalAssetContainer';
 import PermissionContainer from './containers/permissions/PermissionContainer';
+import GroupContainer from './containers/groups/GroupContainer';
 
 import './App.css';
 
@@ -29,6 +30,9 @@ class App extends Component {
         </div>
         <div>
         <PermissionContainer/>
+        </div>
+        <div>
+        <GroupContainer/>
         </div>
       </div>
     //   <div>

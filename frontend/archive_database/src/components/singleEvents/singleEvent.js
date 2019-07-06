@@ -11,7 +11,9 @@ const SingleEvent = (props) => {
     <div className = "single-singleEvent">
       <div className = "details">
         <ul>
-          <li>Title: {props.singleEvent.title} </li>
+          <div>
+          <li><p className="list-heading">Title: </p> <> </><p> {props.singleEvent.title} </p></li>
+          </div>
           <li>Date: {props.singleEvent.date} </li>
           <li>Location: {props.singleEvent.location} </li>
           <li>Venue: {props.singleEvent.venue} </li>

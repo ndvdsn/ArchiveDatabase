@@ -22,15 +22,14 @@ const DigitalAsset = (props) => {
     <div className = "single-document">
       <div className="details">
         <ul>
-          <li>Type: {props.digitalAsset.type}</li>
+          <li>Single Event: {props.digitalAsset.singleEvent.title}</li>
           <li>File Name: {props.digitalAsset.fileName}</li>
+          <li>Hierarchy: {props.digitalAsset.hierarchy}</li>
+          <li>Type: {props.digitalAsset.type}</li>
           <li>Format: {props.digitalAsset.format}</li>
           <li>File Size: {props.digitalAsset.fileSize}</li>
           <li>Duration: {props.digitalAsset.duration}</li>
           <li>Document Notes: {props.digitalAsset.documentNotes}</li>
-          <li>Hierarchy: {props.digitalAsset.hierarchy}</li>
-          <li>Single Event: {props.digitalAsset.singleEvent.title}</li>
-
           <li>Permissions: ({artist}){permission} </li>
         </ul>
       </div>

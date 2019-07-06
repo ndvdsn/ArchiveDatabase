@@ -30,4 +30,4 @@ const DigitalAssetList = (props) => {
   )
 };
 
-export default DigitalAssetList
+export default DigitalAssetList;

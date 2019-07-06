@@ -3,6 +3,8 @@ import Artist from "./Artist"
 
 const ArtistList = (props) => {
 
+    
+
     if (props.artists == null || props.artists.length ===0){
       return<p>Loading...</p>
     }
@@ -24,4 +26,4 @@ const ArtistList = (props) => {
     )
   };
 
-export default ArtistList
+export default ArtistList;

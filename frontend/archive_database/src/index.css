@@ -67,7 +67,11 @@ li {
 }
 
 p {
-  padding: 6px;
+  /* padding: 6px; */
+}
+
+.list-heading {
+  color: white;
 }
 
 .selector {
@@ -83,8 +87,8 @@ p {
 }
 
 .single-singleEvent {
-  margin: 6px;
-  padding: 6px;
+  /* margin: 6px;
+  padding: 6px; */
   background: blue;
 }
 
@@ -120,7 +124,12 @@ p {
   padding: 8px;
 }
 
+.artist-singleEvent-container {
 
+  border: 1px solid #252626;
+  margin: 6px;
+  padding: 6px;
+}
 /* li {
   display: flex-grid;
 } */

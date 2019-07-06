@@ -40,6 +40,10 @@ const Artist = (props) => {
     return <ul key={index}>{singleEvent.venue}</ul>
   })
 
+  const multiEvent = props.artist.singleEvents.map((multiEvent, index) => {
+    return <ul key={index}>{multiEvent.multiEventName}</ul>
+  })
+
   return(
     <div className = "single-artist">
       <div className="details">
@@ -54,22 +58,28 @@ const Artist = (props) => {
         <li>Country: {props.artist.country}</li>
         </div>
         <div>
-        <li>Groups: {groups}</li>
+        <li>Member of groups: {groups}</li>
         </div>
-        <div>
-        <li>Single Event Title: {singleEvent}</li>
-        </div>
-        <div>
-        <li>Date: {dateBasic}</li>
-        </div>
-        <div>
-        <li>Time: {time}</li>
-        </div>
-        <div>
-        <li>Location: {location}</li>
-        </div>
-        <div>
-        <li>Venue: {venue}</li>
+        <h4>Participated in events:</h4>
+        <div className="artist-singleEvent-container">
+          <div>
+          <li>Title: {singleEvent}</li>
+          </div>
+          <div>
+          <li>Part of: {props.artist.singleEvent}</li>
+          </div>
+          <div>
+          <li>Date: {dateBasic}</li>
+          </div>
+          <div>
+          <li>Time: {time}</li>
+          </div>
+          <div>
+          <li>Location: {location}</li>
+          </div>
+          <div>
+          <li>Venue: {venue}</li>
+          </div>
         </div>
       </ul>
       </div>
