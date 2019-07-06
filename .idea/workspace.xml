@@ -18,6 +18,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/arika/ArchiveDatabase/components/DataLoader.java">
           <provider selected="true" editor-type-id="text-editor">
+
             <state relative-caret-position="4">
               <caret line="73" column="45" selection-start-line="73" selection-start-column="45" selection-end-line="73" selection-end-column="45" />
               <folding>
@@ -42,6 +43,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/arika/ArchiveDatabase/models/Document.java">
           <provider selected="true" editor-type-id="text-editor">
+
             <state relative-caret-position="1634">
               <caret line="182" column="33" selection-start-line="182" selection-start-column="33" selection-end-line="182" selection-end-column="33" />
               <folding>
@@ -508,6 +510,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info active="true" anchor="bottom" id="Find" order="1" sideWeight="0.49919224" visible="true" weight="0.32852563" />
       <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32742155" />
+
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39699864" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -898,6 +901,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/arika/ArchiveDatabase/models/Artist.java">
       <provider selected="true" editor-type-id="text-editor">
+
         <state relative-caret-position="474">
           <caret line="88" column="4" selection-start-line="88" selection-start-column="4" selection-end-line="88" selection-end-column="63" />
           <folding>
@@ -925,6 +929,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/arika/ArchiveDatabase/projections/EmbedInfoInArtist.java">
       <provider selected="true" editor-type-id="text-editor">
+
         <state relative-caret-position="135">
           <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
         </state>
@@ -942,6 +947,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/arika/ArchiveDatabase/components/DataLoader.java">
       <provider selected="true" editor-type-id="text-editor">
+
         <state relative-caret-position="4">
           <caret line="73" column="45" selection-start-line="73" selection-start-column="45" selection-end-line="73" selection-end-column="45" />
           <folding>
