@@ -12,7 +12,7 @@ const SingleEvent = (props) => {
       <div className = "details">
         <ul>
           <div>
-          <li><p className="list-heading">Title: </p> <> </><p> {props.singleEvent.title} </p></li>
+          <li>Title: {props.singleEvent.title}</li>
           </div>
           <li>Date: {props.singleEvent.date} </li>
           <li>Location: {props.singleEvent.location} </li>
@@ -27,3 +27,5 @@ const SingleEvent = (props) => {
 }
 
 export default SingleEvent;
+
+// <li><p className="list-heading">Title: </p><p>{' '} {props.singleEvent.title} </p></li>
