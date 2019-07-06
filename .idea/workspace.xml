@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="50261505-8881-4e4d-8bde-988398205103" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/archive_database/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/archive_database/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/archive_database/src/components/artists/Artist.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/archive_database/src/components/artists/Artist.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/archive_database/src/components/artists/ArtistList.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/archive_database/src/components/artists/ArtistList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/archive_database/src/components/digitalAssets/DigitalAsset.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/archive_database/src/components/digitalAssets/DigitalAsset.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/archive_database/src/components/digitalAssets/DigitalAssetList.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/archive_database/src/components/digitalAssets/DigitalAssetList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/archive_database/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/archive_database/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arika/ArchiveDatabase/components/DataLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arika/ArchiveDatabase/components/DataLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arika/ArchiveDatabase/models/Document.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arika/ArchiveDatabase/models/Document.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/arika/ArchiveDatabase/components/DataLoader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/arika/ArchiveDatabase/components/DataLoader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/arika/ArchiveDatabase/models/Document.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/arika/ArchiveDatabase/models/Document.class" afterDir="false" />
-    </list>
+    <list default="true" id="50261505-8881-4e4d-8bde-988398205103" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -30,8 +18,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/arika/ArchiveDatabase/components/DataLoader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="223">
-              <caret line="73" column="45" lean-forward="true" selection-start-line="73" selection-start-column="45" selection-end-line="73" selection-end-column="45" />
+            <state relative-caret-position="4">
+              <caret line="73" column="45" selection-start-line="73" selection-start-column="45" selection-end-line="73" selection-end-column="45" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -43,7 +31,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/arika/ArchiveDatabase/models/SingleEvent.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-529">
-              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+              <caret line="18" selection-start-line="18" selection-end-line="18" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -945,7 +933,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/arika/ArchiveDatabase/models/SingleEvent.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-529">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -954,8 +942,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/arika/ArchiveDatabase/components/DataLoader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="73" column="45" lean-forward="true" selection-start-line="73" selection-start-column="45" selection-end-line="73" selection-end-column="45" />
+        <state relative-caret-position="4">
+          <caret line="73" column="45" selection-start-line="73" selection-start-column="45" selection-end-line="73" selection-end-column="45" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
