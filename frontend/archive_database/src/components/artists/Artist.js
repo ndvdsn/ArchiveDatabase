@@ -52,9 +52,6 @@ const Artist = (props) => {
         <li><a href={'/artists/'+id}>{props.artist.name}</a></li>
         </div>
         <div>
-        <li>Name: {props.artist.name}</li>
-        </div>
-        <div>
         <li>Country: {props.artist.country}</li>
         </div>
         <div>
@@ -64,9 +61,6 @@ const Artist = (props) => {
         <div className="artist-singleEvent-container">
           <div>
           <li>Title: {singleEvent}</li>
-          </div>
-          <div>
-          <li>Part of: {props.artist.singleEvent}</li>
           </div>
           <div>
           <li>Date: {dateBasic}</li>

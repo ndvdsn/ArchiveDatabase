@@ -19,7 +19,6 @@ class ArtistContainer extends React.Component{
   }
 
   render(){
-    console.log(this.state.artists);
     return (
       <>
       <h1> Artists </h1>

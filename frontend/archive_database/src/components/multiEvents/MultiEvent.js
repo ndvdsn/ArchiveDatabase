@@ -11,7 +11,7 @@ const MultiEvent = (props) => {
   return(
     <div className = "single-multiEvent">
       <div className="details">
-        <p>Name: {props.multiEvent.multiEventName}</p>
+        <p>{props.multiEvent.multiEventName}</p>
         <p>Year: {props.multiEvent.year}</p>
       </div>
     </div>

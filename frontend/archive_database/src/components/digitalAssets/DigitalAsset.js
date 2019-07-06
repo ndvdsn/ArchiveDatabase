@@ -30,7 +30,7 @@ const DigitalAsset = (props) => {
           <li>File Size: {props.digitalAsset.fileSize}</li>
           <li>Duration: {props.digitalAsset.duration}</li>
           <li>Document Notes: {props.digitalAsset.documentNotes}</li>
-          <li>Permissions: ({artist}){permission} </li>
+          <li>Permissions: {artist} {permission} </li>
         </ul>
       </div>
     </div>

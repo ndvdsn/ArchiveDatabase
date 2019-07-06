@@ -6,9 +6,6 @@ const Permission = (props) => {
     return null;
   }
 
-
-
-
   return(
     <div className = "single-permission">
       <div className="details">

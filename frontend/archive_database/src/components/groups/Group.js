@@ -16,7 +16,7 @@ const Group = (props) => {
       <div className="details">
         <ul>
           <li>Name: {props.group.name}</li>
-          <li>Artists:{artists}</li>
+          <li>Members:{artists}</li>
         </ul>
       </div>
     </div>
