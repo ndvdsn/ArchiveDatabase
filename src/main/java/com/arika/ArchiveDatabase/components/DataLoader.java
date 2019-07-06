@@ -132,6 +132,9 @@ public class DataLoader implements ApplicationRunner {
         Group vajra = new Group("Vajra");
         groupRepository.save(vajra);
 
+        Group ki = new Group("Ki");
+        groupRepository.save(ki);
+
         // create artist
         Artist artist1 = new Artist("Keiji Haino", "Japan");
         artistRepository.save(artist1);
@@ -142,63 +145,47 @@ public class DataLoader implements ApplicationRunner {
         Artist artist3 = new Artist("Toshiaki Ishizuka", "Japan");
         artistRepository.save(artist3);
 
-        // create permission
-        Permission permission1 = new Permission("Yes", "Yes", "Yes", "CC BY-NC-ND 4:0", "Arika", "Test string", "12/6/10", artist2);
-        permissionRepository.save(permission1);
-
-        // embed artist in permission
-        permission1.setArtist(artist2);
-        permissionRepository.save(permission1);
-
-        // create permission
-        Permission permission2 = new Permission("No", "Yes", "Yes", "Copyright", "Arika", "Test string 2", "3/4/11", artist1);
-        permissionRepository.save(permission2);
-
-        // save artist to permission
-        permission2.setArtist(artist1);
-        permissionRepository.save(permission2);
-
-        // create artist
         Artist artistSgaireWood = new Artist("Sgaire Wood", "UK");
         artistRepository.save(artistSgaireWood);
 
-        // create single event
-        SingleEvent seSgaireWood = new SingleEvent("Sgaire Wood", date01, "Glasgow", "Tramway", episode09);
-        singleEventRepository.save(seSgaireWood);
+        Artist fritzWelch = new Artist ("Fritz Welch", "USA");
+        artistRepository.save(fritzWelch);
 
+        Artist mico = new Artist("Mico", "USA");
+        artistRepository.save(mico);
 
-        SingleEvent vajra_performance = new SingleEvent("Vajra", date01, "Glasgow", "The Arches", instal04);
-        singleEventRepository.save(vajra_performance);
-        
+        Artist tamioShiraishi = new Artist("Tamio Shiraishi", "Japan");
+        artistRepository.save(tamioShiraishi);
 
-        // create document
-        Document document1 = new Document("Audio", "INSTAL_04_Vajra.wav", "WAV", 44.13, 0.45, "Recorded by so and so from the booth", "Master", vajra_performance);
-        documentRepository.save(document1);
-
-        // save singleEvent to document
-        document1.setSingleEvent(vajra_performance);
-        documentRepository.save(document1);
-
-        // save permissions to document
-        document1.addPermissions(permission1);
-        document1.addPermissions(permission2);
-        documentRepository.save(document1);
-
-//         save artist to document
-        document1.addArtists(artist1);
-        documentRepository.save(document1);
-
-        PhysicalAsset vajraMinidisc = new PhysicalAsset("Audio", "Minidisc", "One of 10", "16", "Transcribed 2011", "Box 2", vajra_performance);
-        physicalAssetRepository.save(vajraMinidisc);
-
-        // add artist to group
+        // add artists to groups
         vajra.addArtist(artist1);
         vajra.addArtist(artist2);
         vajra.addArtist(artist3);
         groupRepository.save(vajra);
 
+        ki.addArtist(fritzWelch);
+        ki.addArtist(tamioShiraishi);
+        ki.addArtist(mico);
+        groupRepository.save(ki);
 
 
+        // add group to artist
+        artist1.addGroup(vajra);
+        artist2.addGroup(vajra);
+        artist3.addGroup(vajra);
+        tamioShiraishi.addGroup(ki);
+        mico.addGroup(ki);
+        fritzWelch.addGroup(ki);
+
+        // create single events
+        SingleEvent seSgaireWood = new SingleEvent("Sgaire Wood", date01, "Glasgow", "Tramway", episode09);
+        singleEventRepository.save(seSgaireWood);
+
+        SingleEvent vajra_performance = new SingleEvent("Vajra", date01, "Glasgow", "The Arches", instal04);
+        singleEventRepository.save(vajra_performance);
+
+        SingleEvent kiInstal08 = new SingleEvent("Ki", date01, "Glasgow", "The Arches", instal08);
+        singleEventRepository.save(kiInstal08);
 
         // add artists to single event
         vajra_performance.addArtist(artist1);
@@ -209,18 +196,113 @@ public class DataLoader implements ApplicationRunner {
         seSgaireWood.addArtist(artistSgaireWood);
         singleEventRepository.save(seSgaireWood);
 
-        artist1.addSingleEvent(vajra_performance);
-        artist2.addSingleEvent(vajra_performance);
-        artist3.addSingleEvent(vajra_performance);
-        artistSgaireWood.addSingleEvent((seSgaireWood));
+        kiInstal08.addArtist(fritzWelch);
+        kiInstal08.addArtist(tamioShiraishi);
+        kiInstal08.addArtist(mico);
+        singleEventRepository.save(kiInstal08);
 
-        artist1.addGroup(vajra);
-        artist2.addGroup(vajra);
-        artist3.addGroup(vajra);
+
+        //add singleEvent to artist
+
+        artist1.addSingleEvent(vajra_performance);
         artistRepository.save(artist1);
+
+        artist2.addSingleEvent(vajra_performance);
         artistRepository.save(artist2);
+
+        artist3.addSingleEvent(vajra_performance);
         artistRepository.save(artist3);
+
+        artistSgaireWood.addSingleEvent(seSgaireWood);
         artistRepository.save(artistSgaireWood);
+
+        fritzWelch.addSingleEvent(kiInstal08);
+        artistRepository.save(fritzWelch);
+
+        tamioShiraishi.addSingleEvent(kiInstal08);
+        artistRepository.save(tamioShiraishi);
+
+        mico.addSingleEvent(kiInstal08);
+        artistRepository.save(mico);
+
+
+
+        // create permission
+        Permission permission1 = new Permission("Yes", "Yes", "Yes", "CC BY-NC-ND 4:0", "Arika", "Test string", "12/6/10", artist2);
+        permissionRepository.save(permission1);
+
+        // create permission
+        Permission permission2 = new Permission("No", "Yes", "Yes", "Copyright", "Arika", "Test string 2", "3/4/11", artist1);
+        permissionRepository.save(permission2);
+
+        Permission fritzKiPerm = new Permission("Yes", "Yes", "Yes", "None", "Arika", "blah", "10/11/10", fritzWelch);
+        permissionRepository.save(fritzKiPerm);
+
+        Permission tamioKiPerm = new Permission("Yes", "Yes", "Yes", "None", "Arika", "blah", "10/11/10", tamioShiraishi);
+        permissionRepository.save(tamioKiPerm);
+
+        Permission micoKiPerm = new Permission("Yes", "Yes", "Yes", "None", "Arika", "blah", "10/11/10", mico);
+        permissionRepository.save(micoKiPerm);
+
+        Permission sgaireSgairePerm = new Permission("Yes", "Yes", "Yes", "CC BY-ND-ND 4.0", "Arika", "Magical", "20/11/17", artistSgaireWood);
+        permissionRepository.save(sgaireSgairePerm);
+
+
+        // save artist to permission
+        permission2.setArtist(artist1);
+        permissionRepository.save(permission2);
+
+        permission1.setArtist(artist2);
+        permissionRepository.save(permission1);
+
+        fritzKiPerm.setArtist(fritzWelch);
+        permissionRepository.save(fritzKiPerm);
+
+        tamioKiPerm.setArtist(tamioShiraishi);
+        permissionRepository.save(tamioKiPerm);
+
+        micoKiPerm.setArtist(mico);
+        permissionRepository.save(micoKiPerm);
+
+
+        // create document
+        Document document1 = new Document("Audio", "INSTAL_04_Vajra.wav", "WAV", 44.13, 0.45, "Recorded by so and so from the booth", "Master", vajra_performance);
+        documentRepository.save(document1);
+
+        Document kiWavMasterInstal08 = new Document("Audio", "INSTAL_08_Ki.wav", "WAV", 60.17, 0.40, "Recorded by Kenny", "Master", kiInstal08);
+        documentRepository.save(kiWavMasterInstal08);
+
+
+        // save permissions to document
+        document1.addPermissions(permission1);
+        document1.addPermissions(permission2);
+        document1.setSingleEvent(vajra_performance);
+        
+
+        kiWavMasterInstal08.addPermissions(fritzKiPerm);
+        kiWavMasterInstal08.addPermissions(micoKiPerm);
+        kiWavMasterInstal08.addPermissions(tamioKiPerm);
+
+
+
+        //   save artist to document
+        document1.addArtists(artist1);
+        document1.addArtists(artist2);
+        documentRepository.save(document1);
+
+        kiWavMasterInstal08.addArtists(fritzWelch);
+        kiWavMasterInstal08.addArtists(tamioShiraishi);
+        kiWavMasterInstal08.addArtists(mico);
+        documentRepository.save(kiWavMasterInstal08);
+
+        // create physical asset
+        PhysicalAsset vajraMinidisc = new PhysicalAsset("Audio", "Minidisc", "One of 10", "16", "Transcribed 2011", "Box 2", vajra_performance);
+        physicalAssetRepository.save(vajraMinidisc);
+
+
+
+
+
 
 
 

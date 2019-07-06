@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="50261505-8881-4e4d-8bde-988398205103" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/frontend/archive_database/src/components/singleEvents/singleEvent.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/archive_database/src/components/singleEvents/singleEvent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/archive_database/src/components/artists/Artist.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/archive_database/src/components/artists/Artist.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/archive_database/src/components/digitalAssets/DigitalAsset.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/archive_database/src/components/digitalAssets/DigitalAsset.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/archive_database/src/components/groups/Group.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/archive_database/src/components/groups/Group.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/archive_database/src/components/permissions/Permission.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/archive_database/src/components/permissions/Permission.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/archive_database/src/containers/artists/ArtistContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/archive_database/src/containers/artists/ArtistContainer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/archive_database/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/archive_database/src/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/arika/ArchiveDatabase/components/DataLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arika/ArchiveDatabase/components/DataLoader.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -21,8 +26,20 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/arika/ArchiveDatabase/components/DataLoader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-81">
-              <caret line="171" column="8" selection-start-line="171" selection-start-column="8" selection-end-line="171" selection-end-column="8" />
+            <state relative-caret-position="278">
+              <caret line="279" column="8" selection-start-line="279" selection-start-column="8" selection-end-line="279" selection-end-column="8" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/arika/ArchiveDatabase/ArchiveDatabaseApplicationTests.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-245">
+              <caret line="86" column="32" lean-forward="true" selection-start-line="86" selection-start-column="32" selection-end-line="86" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -169,11 +186,6 @@
             <path>
               <item name="ArchiveDatabase" type="b2602c69:ProjectViewProjectNode" />
               <item name="ArchiveDatabase" type="462c0819:PsiDirectoryNode" />
-              <item name=".idea" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ArchiveDatabase" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ArchiveDatabase" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -210,80 +222,6 @@
               <item name="ArchiveDatabase" type="b2602c69:ProjectViewProjectNode" />
               <item name="ArchiveDatabase" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ArchiveDatabase" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ArchiveDatabase" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ArchiveDatabase" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ArchiveDatabase" type="462c0819:PsiDirectoryNode" />
-              <item name="projections" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ArchiveDatabase" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ArchiveDatabase" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ArchiveDatabase" type="462c0819:PsiDirectoryNode" />
-              <item name="repositories" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ArchiveDatabase" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ArchiveDatabase" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ArchiveDatabase" type="462c0819:PsiDirectoryNode" />
-              <item name="repositories" type="462c0819:PsiDirectoryNode" />
-              <item name="Artist" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ArchiveDatabase" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ArchiveDatabase" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ArchiveDatabase" type="462c0819:PsiDirectoryNode" />
-              <item name="repositories" type="462c0819:PsiDirectoryNode" />
-              <item name="Document" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ArchiveDatabase" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ArchiveDatabase" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ArchiveDatabase" type="462c0819:PsiDirectoryNode" />
-              <item name="repositories" type="462c0819:PsiDirectoryNode" />
-              <item name="Permission" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ArchiveDatabase" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ArchiveDatabase" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ArchiveDatabase" type="462c0819:PsiDirectoryNode" />
-              <item name="repositories" type="462c0819:PsiDirectoryNode" />
-              <item name="SingleEvent" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ArchiveDatabase" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ArchiveDatabase" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ArchiveDatabase" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ArchiveDatabase" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -300,28 +238,6 @@
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="ArchiveDatabase" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ArchiveDatabase" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-            <path>
-              <item name="ArchiveDatabase" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.9.0" type="70bed36:NamedLibraryElementNode" />
-            </path>
-            <path>
-              <item name="ArchiveDatabase" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.9.0" type="70bed36:NamedLibraryElementNode" />
-              <item name="jackson-annotations-2.9.0.jar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ArchiveDatabase" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.9.0" type="70bed36:NamedLibraryElementNode" />
-              <item name="jackson-annotations-2.9.0.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="annotation" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -760,16 +676,6 @@
     <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/arika/ArchiveDatabase/ArchiveDatabaseApplicationTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="410">
-          <caret line="86" selection-start-line="86" selection-end-line="86" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="702">
@@ -957,10 +863,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/arika/ArchiveDatabase/ArchiveDatabaseApplicationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-245">
+          <caret line="86" column="32" lean-forward="true" selection-start-line="86" selection-start-column="32" selection-end-line="86" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/arika/ArchiveDatabase/components/DataLoader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-81">
-          <caret line="171" column="8" selection-start-line="171" selection-start-column="8" selection-end-line="171" selection-end-column="8" />
+        <state relative-caret-position="278">
+          <caret line="279" column="8" selection-start-line="279" selection-start-column="8" selection-end-line="279" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
