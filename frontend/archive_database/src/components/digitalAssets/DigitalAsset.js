@@ -36,6 +36,7 @@ const DigitalAsset = (props) => {
     </div>
   )
   // currently getting an array of permissions instead of specific ones.
+  // *** consider using tables / table for the permissions properties above ***
 }
 
 export default DigitalAsset;
