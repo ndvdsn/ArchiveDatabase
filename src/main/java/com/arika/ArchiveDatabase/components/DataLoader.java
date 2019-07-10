@@ -184,8 +184,8 @@ public class DataLoader implements ApplicationRunner {
         SingleEvent vajra_performance = new SingleEvent("Vajra", date01, "Glasgow", "The Arches", instal04);
         singleEventRepository.save(vajra_performance);
 
-        SingleEvent kiInstal08 = new SingleEvent("Ki", date01, "Glasgow", "The Arches", instal08);
-        singleEventRepository.save(kiInstal08);
+        SingleEvent kiInstal09= new SingleEvent("Ki", date01, "Glasgow", "The Arches", instal09);
+        singleEventRepository.save(kiInstal09);
 
         // add artists to single event
         vajra_performance.addArtist(artist1);
@@ -196,10 +196,10 @@ public class DataLoader implements ApplicationRunner {
         seSgaireWood.addArtist(artistSgaireWood);
         singleEventRepository.save(seSgaireWood);
 
-        kiInstal08.addArtist(fritzWelch);
-        kiInstal08.addArtist(tamioShiraishi);
-        kiInstal08.addArtist(mico);
-        singleEventRepository.save(kiInstal08);
+        kiInstal09.addArtist(fritzWelch);
+        kiInstal09.addArtist(tamioShiraishi);
+        kiInstal09.addArtist(mico);
+        singleEventRepository.save(kiInstal09);
 
 
         //add singleEvent to artist
@@ -216,13 +216,13 @@ public class DataLoader implements ApplicationRunner {
         artistSgaireWood.addSingleEvent(seSgaireWood);
         artistRepository.save(artistSgaireWood);
 
-        fritzWelch.addSingleEvent(kiInstal08);
+        fritzWelch.addSingleEvent(kiInstal09);
         artistRepository.save(fritzWelch);
 
-        tamioShiraishi.addSingleEvent(kiInstal08);
+        tamioShiraishi.addSingleEvent(kiInstal09);
         artistRepository.save(tamioShiraishi);
 
-        mico.addSingleEvent(kiInstal08);
+        mico.addSingleEvent(kiInstal09);
         artistRepository.save(mico);
 
 
@@ -269,7 +269,7 @@ public class DataLoader implements ApplicationRunner {
         Document document1 = new Document("Audio", "INSTAL_04_Vajra.wav", "WAV", 44.13, 0.45, "Recorded by so and so from the booth", "Master", vajra_performance);
         documentRepository.save(document1);
 
-        Document kiWavMasterInstal08 = new Document("Audio", "INSTAL_08_Ki.wav", "WAV", 60.17, 0.40, "Recorded by Kenny", "Master", kiInstal08);
+        Document kiWavMasterInstal08 = new Document("Audio", "INSTAL_08_Ki.wav", "WAV", 60.17, 0.40, "Recorded by Kenny", "Master", kiInstal09);
         documentRepository.save(kiWavMasterInstal08);
 
 
@@ -277,7 +277,7 @@ public class DataLoader implements ApplicationRunner {
         document1.addPermissions(permission1);
         document1.addPermissions(permission2);
         document1.setSingleEvent(vajra_performance);
-        
+
 
         kiWavMasterInstal08.addPermissions(fritzKiPerm);
         kiWavMasterInstal08.addPermissions(micoKiPerm);
