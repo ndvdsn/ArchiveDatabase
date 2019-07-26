@@ -27,6 +27,7 @@ class App extends Component {
               <Route exact path = "/groups" component = {GroupContainer}/>
             </Switch>
           </React.Fragment>
+
         </Router>
       </div>
     );
