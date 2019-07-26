@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="50261505-8881-4e4d-8bde-988398205103" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/archive_database/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/archive_database/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/archive_database/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/archive_database/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/archive_database/src/components/artists/Artist.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/archive_database/src/components/artists/Artist.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/archive_database/src/components/groups/Group.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/archive_database/src/components/groups/Group.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/archive_database/src/containers/multiEvents/MultiEventContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/archive_database/src/containers/multiEvents/MultiEventContainer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/archive_database/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/archive_database/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arika/ArchiveDatabase/components/DataLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arika/ArchiveDatabase/components/DataLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/arika/ArchiveDatabase/components/DataLoader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/arika/ArchiveDatabase/components/DataLoader.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -25,14 +17,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/arika/ArchiveDatabase/components/DataLoader.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="375">
-              <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+              <caret line="25" selection-start-line="25" selection-end-line="25" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/arika/ArchiveDatabase/models/Group.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="214">
+              <caret line="38" selection-start-line="38" selection-end-line="38" />
             </state>
           </provider>
         </entry>
@@ -463,7 +464,7 @@
     <frame x="0" y="23" width="1440" height="826" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3104435" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3104435" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -472,7 +473,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info active="true" anchor="bottom" id="Find" order="1" sideWeight="0.49919224" visible="true" weight="0.32852563" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32561308" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32561308" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39699864" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -845,13 +846,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/arika/ArchiveDatabase/models/Group.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101">
-          <caret line="38" selection-start-line="38" selection-end-line="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/arika/ArchiveDatabase/models/Permission.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1140">
@@ -912,10 +906,17 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/arika/ArchiveDatabase/components/DataLoader.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
-          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/arika/ArchiveDatabase/models/Group.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
         </state>
       </provider>
     </entry>
