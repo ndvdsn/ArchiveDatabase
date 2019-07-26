@@ -6,15 +6,35 @@ const DigitalAsset = (props) => {
     return null;
   }
 
-  console.log(props.digitalAsset)
+  const id = props.digitalAsset.id
 
-  const artist = props.digitalAsset.artists.map((artist, index)=>{
-    return <ul key={index}>{artist.name}</ul>
+  const artists = props.digitalAsset.artists.map((artist, index)=>{
+    return(
+    <li key={artist.id}>
+    <div>
+    {artist.id}
+    <div>
+    {artist.name}
+    </div>
+    </div>
+    </li>
+  )
   })
 
 
-  const permission = props.digitalAsset.permissions.map((permission, index)=>{
-    return <ul key={index}>{permission.permissionGiven}</ul>
+  const permissions = props.digitalAsset.permissions.map((permission, index)=>{
+    return(
+    <li key={permission.id}>
+    <div>
+    {permission.id}
+    <div>
+    <li>{permission.permissionGiven}</li>
+    <li>{permission.rights}</li>
+    <li></li>
+    </div>
+    </div>
+    </li>
+  )
   })
   // eventually we'll want the permission detail here to be a link to the permissions object
 
@@ -30,7 +50,10 @@ const DigitalAsset = (props) => {
           <li>File Size: {props.digitalAsset.fileSize}</li>
           <li>Duration: {props.digitalAsset.duration}</li>
           <li>Document Notes: {props.digitalAsset.documentNotes}</li>
-          <li>Permissions: {artist} {permission} </li>
+          <li>Artists:</li>
+          {artists}
+          <li>Permissions:</li>
+          {permissions}
         </ul>
       </div>
     </div>
