@@ -1,13 +1,11 @@
 import React from "react";
 // import moment from "moment";
 
-
 const Artist = (props) => {
 
   if(!props.artist){
     return null;
   }
-
 
   const dateBasic = props.artist.singleEvents.map((singleEvent)=>{
     return singleEvent.date
@@ -28,7 +26,7 @@ const Artist = (props) => {
   })
 
   const singleEvent = props.artist.singleEvents.map((singleEvent, index) => {
-    return <ul key={index}>{singleEvent.title}</ul>
+    return <ul key={index}>{singleEvent.title} {singleEvent.location} {singleEvent.venue}</ul>
 
   })
 
@@ -38,10 +36,6 @@ const Artist = (props) => {
 
   const venue = props.artist.singleEvents.map((singleEvent, index) => {
     return <ul key={index}>{singleEvent.venue}</ul>
-  })
-
-  const multiEvent = props.artist.singleEvents.map((multiEvent, index) => {
-    return <ul key={index}>{multiEvent.multiEventName}</ul>
   })
 
   return(

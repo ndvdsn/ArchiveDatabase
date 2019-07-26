@@ -58,7 +58,7 @@ img {
   border: 1px solid #252626;
   margin: 6px;
   padding: 6px;
-  /* background-color: beige; */
+
 }
 
 li {
@@ -75,7 +75,7 @@ p {
 }
 
 .selector {
-  /* justify-content: center; */
+
   margin: 0 auto 20px auto;
   display: block;
   font-size: 20px;
@@ -87,8 +87,6 @@ p {
 }
 
 .single-singleEvent {
-  /* margin: 6px;
-  padding: 6px; */
   background: blue;
 }
 
@@ -132,5 +130,22 @@ p {
 }
 
 .navbar-sections {
+  display: flex;
+  margin: 6px;
+  padding: 6px;
+  justify-content: space-around;
+  border: 1px solid #252626;
 
+}
+
+.navLink {
+  font-weight: bold;
+  color: white;
+  margin: 6px;
+  padding: 6px;
+}
+
+.single-multiEvent, .single-permission, .single-artist, .single-singleEvent, .single-document, .single-permission, .single-group {
+  margin: 2px;
+  padding: 2px;
 }

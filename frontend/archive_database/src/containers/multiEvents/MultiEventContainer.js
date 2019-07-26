@@ -12,7 +12,7 @@ class MultiEventContainer extends React.Component{
   }
   componentDidMount(){
     const request = new Request();
-    request.get('api/multiEvents')
+    request.get('/api/multiEvents')
     .then(data => {
       this.setState({multiEvents:data._embedded.multiEvents})
     })
