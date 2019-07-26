@@ -122,7 +122,7 @@ p {
   padding: 8px;
 }
 
-.artist-singleEvent-container {
+.artist-singleEvent-container, .single-artist-group{
 
   border: 1px solid #252626;
   margin: 6px;

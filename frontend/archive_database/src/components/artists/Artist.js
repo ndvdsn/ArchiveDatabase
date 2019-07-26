@@ -14,45 +14,59 @@ const Artist = (props) => {
 
   const artist_singleEvents = props.artist.singleEvents.map((singleEvent, index) => {
       return(
-        <li key= {singleEvent.id} className = "artist-singleEvent">
-        <div className="single-artist-singleEvent">
-        {singleEvent.id}:
-        </div><div>{singleEvent.title} {singleEvent.location}{singleEvent.venue}{singleEvent.date}{singleEvent.time}</div>
+        <li key= {singleEvent.id} >
+        <div className="artist-singleEvent-container">
+        {singleEvent.id}
+
+        <div>
+        {' '}{singleEvent.title} in:{' '}{singleEvent.location} at:{' '}{singleEvent.venue} on:{' '} {singleEvent.date} {' '}{singleEvent.time}
+        </div>
+        </div>
         </li>
       )
     })
 
   const artist_groups = props.artist.groups.map((group, index) => {
     return(
-      <li key={group.id} className = "artist-group">
-      <div className="single-artist-group">
+      <li key={group.id} >
+      <div className="artist-singleEvent-container">
       {group.id}
-      </div><div>{group.name}</div>
+
+      <div>
+      {' '}{group.name}
+      </div>
+      </div>
       </li>
     )
   })
 
   return(
-    <div className = "component">
+    <div className = "single-artist">
+      <div className = "details">
       <ul>
         <div>
-        <li><a href={'/artists/'+id}>{artistName}</a></li>
+        <li>Name:   {' '}<a href={'/artists/'+id}>{artistName}</a></li>
         </div>
         <div>
-        <li>Country: {artistCountry}</li>
+        <li>Country:   {' '}{artistCountry}</li>
         </div>
         <div>
         </div>
         <h4>Participated in events:</h4>
-        <div className="artist-singleEvent-container">
+        <div>
           <div>
-          <ul>Title: {artist_singleEvents}</ul>
-          </div>
-          <div>
-          <ul>Groups: {artist_groups}</ul>
+          <ul>{artist_singleEvents}</ul>
           </div>
         </div>
+        <h4>Member of groups:</h4>
+        <div>
+          <div>
+          <ul>{artist_groups}</ul>
+          </div>
+        </div>
+
       </ul>
+      </div>
     </div>
   )
 }
