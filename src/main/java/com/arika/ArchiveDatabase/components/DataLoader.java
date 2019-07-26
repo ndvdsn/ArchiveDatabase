@@ -124,7 +124,8 @@ public class DataLoader implements ApplicationRunner {
         MultiEvent kytn03 = new MultiEvent("Kill Your Timid Notion 03", 2003);
         multiEventRepository.save(kytn03);
 
-
+        MultiEvent uninstal10 = new MultiEvent("Uninstal", 2010);
+        multiEventRepository.save(uninstal10);
 
 
 
@@ -134,6 +135,8 @@ public class DataLoader implements ApplicationRunner {
 
         Group ki = new Group("Ki");
         groupRepository.save(ki);
+
+
 
         // create artist
         Artist artist1 = new Artist("Keiji Haino", "Japan");
@@ -156,6 +159,20 @@ public class DataLoader implements ApplicationRunner {
 
         Artist tamioShiraishi = new Artist("Tamio Shiraishi", "Japan");
         artistRepository.save(tamioShiraishi);
+
+        Artist jeanLucGuionnet = new Artist("Jean Luc Guionnet", "France");
+        artistRepository.save(jeanLucGuionnet);
+
+        Artist rayBrassier = new Artist("Ray Brassier", "Scotland");
+        artistRepository.save(rayBrassier);
+
+        Artist seijiroMuruyama = new Artist("Seijiro Muruyama", "Japan");
+        artistRepository.save(seijiroMuruyama);
+
+        Artist ericLaCasa = new Artist("Eric La Casa", "France");
+        artistRepository.save(ericLaCasa);
+
+
 
         // add artists to groups
         vajra.addArtist(artist1);
@@ -184,8 +201,14 @@ public class DataLoader implements ApplicationRunner {
         SingleEvent vajra_performance = new SingleEvent("Vajra", date01, "Glasgow", "The Arches", instal04);
         singleEventRepository.save(vajra_performance);
 
-        SingleEvent kiInstal09= new SingleEvent("Ki", date01, "Glasgow", "The Arches", instal09);
+        SingleEvent kiInstal09 = new SingleEvent("Ki", date01, "Glasgow", "The Arches", instal09);
         singleEventRepository.save(kiInstal09);
+
+        SingleEvent houseUninstal10 = new SingleEvent("House", date01, "Glasgow", "Tramway", uninstal10);
+        singleEventRepository.save(houseUninstal10);
+
+        SingleEvent usedSoundUninstal10 = new SingleEvent("Used Sound", date01, "Glasgow", "Tramway", uninstal10);
+        singleEventRepository.save(usedSoundUninstal10);
 
         // add artists to single event
         vajra_performance.addArtist(artist1);
@@ -200,6 +223,15 @@ public class DataLoader implements ApplicationRunner {
         kiInstal09.addArtist(tamioShiraishi);
         kiInstal09.addArtist(mico);
         singleEventRepository.save(kiInstal09);
+
+        houseUninstal10.addArtist(jeanLucGuionnet);
+        houseUninstal10.addArtist(ericLaCasa);
+        singleEventRepository.save(houseUninstal10);
+
+        usedSoundUninstal10.addArtist(jeanLucGuionnet);
+        usedSoundUninstal10.addArtist(rayBrassier);
+        usedSoundUninstal10.addArtist(seijiroMuruyama);
+        singleEventRepository.save(usedSoundUninstal10);
 
 
         //add singleEvent to artist
@@ -224,6 +256,19 @@ public class DataLoader implements ApplicationRunner {
 
         mico.addSingleEvent(kiInstal09);
         artistRepository.save(mico);
+
+        jeanLucGuionnet.addSingleEvent(houseUninstal10);
+        jeanLucGuionnet.addSingleEvent(usedSoundUninstal10);
+        artistRepository.save(jeanLucGuionnet);
+
+        ericLaCasa.addSingleEvent(houseUninstal10);
+        artistRepository.save(ericLaCasa);
+
+        rayBrassier.addSingleEvent(usedSoundUninstal10);
+        artistRepository.save(rayBrassier);
+
+        seijiroMuruyama.addSingleEvent(usedSoundUninstal10);
+        artistRepository.save(seijiroMuruyama);
 
 
 
