@@ -21,7 +21,7 @@ const NavBar = (props) => {
       <li className="navLink">
       <Link to="/permissions">Permissions</Link>
       </li>
-      
+
       <li className="navLink">
       <Link to="/singleEvents">Single Events</Link>
       </li>
@@ -29,6 +29,12 @@ const NavBar = (props) => {
       <li className="navLink">
       <Link to="/groups">Groups</Link>
       </li>
+
+      <li className="navLink">
+      <Link to="/physicalAssets">Physical Assets</Link>
+      </li>
+
+
 
     </ul>
     </header>

@@ -6,6 +6,7 @@ import SingleEventContainer from './containers/singleEvents/singleEventsContaine
 import DigitalAssetContainer from './containers/digitalAssets/DigitalAssetContainer';
 import PermissionContainer from './containers/permissions/PermissionContainer';
 import GroupContainer from './containers/groups/GroupContainer';
+import PhysicalAssetContainer from './containers/physicalAssets/PhysicalAssetContainer';
 import NavBar from './NavBar';
 
 
@@ -25,6 +26,7 @@ class App extends Component {
               <Route exact path = "/documents" component = {DigitalAssetContainer}/>
               <Route exact path = "/permissions" component = {PermissionContainer}/>
               <Route exact path = "/groups" component = {GroupContainer}/>
+              <Route exact path = "/physicalAssets" component = {PhysicalAssetContainer}/>
             </Switch>
           </React.Fragment>
 
