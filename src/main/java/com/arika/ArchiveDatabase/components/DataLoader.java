@@ -344,11 +344,35 @@ public class DataLoader implements ApplicationRunner {
         PhysicalAsset vajraMinidisc = new PhysicalAsset("Audio", "Minidisc", "One of 10", "16", "Transcribed 2011", "Box 2", vajra_performance);
         physicalAssetRepository.save(vajraMinidisc);
 
+        PhysicalAsset kiCDR = new PhysicalAsset("audio", "CDR", "white disc", "n/a", "supplied by Kenny, digitised 2011", "Box 2", kiInstal09);
+        physicalAssetRepository.save(kiCDR);
+
+        // save artists to physical item
+        vajraMinidisc.addArtist(artist1);
+        vajraMinidisc.addArtist(artist2);
+        vajraMinidisc.addArtist(artist3);
+        physicalAssetRepository.save(vajraMinidisc);
 
 
+        kiCDR.addArtist(fritzWelch);
+        kiCDR.addArtist(mico);
+        kiCDR.addArtist(tamioShiraishi);
+        physicalAssetRepository.save(kiCDR);
 
 
+        // save document to physical item
 
+        vajraMinidisc.addDocument(document1);
+
+        kiCDR.addDocument(kiWavMasterInstal08);
+
+        document1.addPhysicalAsset(vajraMinidisc);
+
+        kiWavMasterInstal08.addPhysicalAsset(kiCDR);
+
+        documentRepository.save(kiWavMasterInstal08);
+
+        documentRepository.save(document1);
 
 
 

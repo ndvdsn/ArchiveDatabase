@@ -148,4 +148,8 @@ public class PhysicalAsset {
     public void setSingleEvent(SingleEvent singleEvent) {
         this.singleEvent = singleEvent;
     }
+
+    public void addDocument(Document document) {this.documents.add(document);}
+
+    public void addArtist(Artist artist) {this.artists.add(artist);}
 }

@@ -192,4 +192,6 @@ public class Document {
     }
 
     public void addPermissions(Permission permission){ this.permissions.add(permission);}
+
+    public void addPhysicalAsset(PhysicalAsset physicalAsset) {this.physicalAsset = physicalAsset;}
 }

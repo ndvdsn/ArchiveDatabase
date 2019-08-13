@@ -100,5 +100,4 @@ public class Artist {
         this.singleEvents.add(singleEvent);
     }
 
-
 }

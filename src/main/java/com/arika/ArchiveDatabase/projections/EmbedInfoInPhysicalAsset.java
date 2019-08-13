@@ -1,5 +1,7 @@
 package com.arika.ArchiveDatabase.projections;
 
+import com.arika.ArchiveDatabase.models.Artist;
+import com.arika.ArchiveDatabase.models.Document;
 import com.arika.ArchiveDatabase.models.PhysicalAsset;
 import com.arika.ArchiveDatabase.models.SingleEvent;
 import org.springframework.data.rest.core.config.Projection;
@@ -16,5 +18,7 @@ public interface EmbedInfoInPhysicalAsset {
     String getItemNumber();
     String getNotes();
     String getLocation();
+    List <Document> getDocuments();
+    List <Artist> getArtists();
     SingleEvent getSingleEvent();
 }
